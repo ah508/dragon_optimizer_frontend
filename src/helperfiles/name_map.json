@@ -1,0 +1,1174 @@
+{
+    "210021_01": {
+        "NameEN": "Homura",
+        "NameJP": "\u30db\u30e0\u30e9\u30ea\u30e5\u30a6",
+        "NameCN": "\u706b\u9f99",
+        "Element": 1,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210022_01": {
+        "NameEN": "Cinder Drake",
+        "NameJP": "\u30d0\u30fc\u30f3\u30c9\u30e9\u30b3",
+        "NameCN": "\u7130\u9f99",
+        "Element": 1,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210023_01": {
+        "NameEN": "Kindling Imp",
+        "NameJP": "\u30ad\u30e3\u30f3\u30c9\u30eb\u30a4\u30f3\u30d7",
+        "NameCN": "\u70db\u9b54",
+        "Element": 1,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210059_01": {
+        "NameEN": "Fubuki",
+        "NameJP": "\u30d5\u30d6\u30ad\u30ea\u30e5\u30a6",
+        "NameCN": "\u96ea\u9f99",
+        "Element": 2,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210063_01": {
+        "NameEN": "Snow Drake",
+        "NameJP": "\u30a2\u30a4\u30b9\u30c9\u30e9\u30b3",
+        "NameCN": "\u51b0\u9f99",
+        "Element": 2,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210067_01": {
+        "NameEN": "Wellspring Imp",
+        "NameJP": "\u30a6\u30a7\u30eb\u30a4\u30f3\u30d7",
+        "NameCN": "\u4e95\u9b54",
+        "Element": 2,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210060_01": {
+        "NameEN": "Tsumuji",
+        "NameJP": "\u30c4\u30e0\u30b8\u30ea\u30e5\u30a6",
+        "NameCN": "\u65cb\u9f99",
+        "Element": 3,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210064_01": {
+        "NameEN": "Gust Drake",
+        "NameJP": "\u30a6\u30a4\u30f3\u30c9\u30e9\u30b3",
+        "NameCN": "\u98ce\u9f99",
+        "Element": 3,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210068_01": {
+        "NameEN": "Zephyr Imp",
+        "NameJP": "\u30a8\u30a2\u30ea\u30a2\u30eb\u30a4\u30f3\u30d7",
+        "NameCN": "\u6c14\u9b54",
+        "Element": 3,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210061_01": {
+        "NameEN": "Hinata",
+        "NameJP": "\u30d2\u30ca\u30bf\u30ea\u30e5\u30a6",
+        "NameCN": "\u9633\u9f99",
+        "Element": 4,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210065_01": {
+        "NameEN": "Moon Drake",
+        "NameJP": "\u30e0\u30fc\u30f3\u30c9\u30e9\u30b3",
+        "NameCN": "\u6708\u9f99",
+        "Element": 4,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210069_01": {
+        "NameEN": "Astral Imp",
+        "NameJP": "\u30b9\u30bf\u30fc\u30a4\u30f3\u30d7",
+        "NameCN": "\u661f\u9b54",
+        "Element": 4,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210062_01": {
+        "NameEN": "Hikage",
+        "NameJP": "\u30d2\u30ab\u30b2\u30ea\u30e5\u30a6",
+        "NameCN": "\u5f71\u9f99",
+        "Element": 5,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210066_01": {
+        "NameEN": "Gloom Drake",
+        "NameJP": "\u30c0\u30fc\u30af\u30c9\u30e9\u30b3",
+        "NameCN": "\u6697\u9f99",
+        "Element": 5,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210070_01": {
+        "NameEN": "Pallid Imp",
+        "NameJP": "\u30b0\u30ec\u30a4\u30f4\u30a4\u30f3\u30d7",
+        "NameCN": "\u5893\u9b54",
+        "Element": 5,
+        "Rarity": 3,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210002_01": {
+        "NameEN": "Brunhilda",
+        "NameJP": "\u30d6\u30ea\u30e5\u30f3\u30d2\u30eb\u30c7",
+        "NameCN": "\u5e03\u4f26\u5e0c\u5c14\u5fb7",
+        "Element": 1,
+        "Rarity": 4,
+        "Availability": [
+            "Story"
+        ]
+    },
+    "210006_01": {
+        "NameEN": "Phoenix",
+        "NameJP": "\u30d5\u30a7\u30cb\u30c3\u30af\u30b9",
+        "NameCN": "\u83f2\u5c3c\u514b\u65af",
+        "Element": 1,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210007_01": {
+        "NameEN": "Ifrit",
+        "NameJP": "\u30a4\u30d5\u30ea\u30fc\u30c8",
+        "NameCN": "\u4f0a\u592b\u5229\u7279",
+        "Element": 1,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210003_01": {
+        "NameEN": "Mercury",
+        "NameJP": "\u30de\u30fc\u30ad\u30e5\u30ea\u30fc",
+        "NameCN": "\u58a8\u4e18\u5229",
+        "Element": 2,
+        "Rarity": 4,
+        "Availability": [
+            "Story"
+        ]
+    },
+    "210008_01": {
+        "NameEN": "Poli\u02bbahu",
+        "NameJP": "\u30dd\u30ea\u30a2\u30d5",
+        "NameCN": "\u6ce2\u4e3d\u4e9a\u8299",
+        "Element": 2,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210058_01": {
+        "NameEN": "Vodyanoy",
+        "NameJP": "\u30f4\u30a9\u30b8\u30e3\u30ce\u30fc\u30a4",
+        "NameCN": "\u6c83\u52a0\u8bfa\u4f0a",
+        "Element": 2,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210001_01": {
+        "NameEN": "Midgardsormr",
+        "NameJP": "\u30df\u30c9\u30ac\u30eb\u30ba\u30aa\u30eb\u30e0",
+        "NameCN": "\u8036\u68a6\u52a0\u5f97",
+        "Element": 3,
+        "Rarity": 4,
+        "Availability": [
+            "Story"
+        ]
+    },
+    "210050_01": {
+        "NameEN": "Roc",
+        "NameJP": "\u30d5\u30a9\u30fc\u30b2\u30eb",
+        "NameCN": "\u6c83\u683c\u5c14",
+        "Element": 3,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210011_01": {
+        "NameEN": "Stribog",
+        "NameJP": "\u30b9\u30c8\u30ea\u30dc\u30fc\u30b0",
+        "NameCN": "\u65af\u7279\u5229\u4f2f\u683c",
+        "Element": 3,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210004_01": {
+        "NameEN": "Jupiter",
+        "NameJP": "\u30e6\u30d4\u30c6\u30eb",
+        "NameCN": "\u6731\u5e87\u7279",
+        "Element": 4,
+        "Rarity": 4,
+        "Availability": [
+            "Story"
+        ]
+    },
+    "210012_01": {
+        "NameEN": "Unicorn",
+        "NameJP": "\u30e6\u30cb\u30b3\u30fc\u30f3",
+        "NameCN": "\u72ec\u89d2\u517d",
+        "Element": 4,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210013_01": {
+        "NameEN": "Lindworm",
+        "NameJP": "\u30ea\u30f3\u30c9\u30f4\u30eb\u30e0",
+        "NameCN": "\u6797\u5fb7\u5df4\u9c81\u59c6",
+        "Element": 4,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210075_01": {
+        "NameEN": "Halloween Silke",
+        "NameJP": "\u30b7\u30eb\u30ad\u30fc\uff08\u30cf\u30ed\u30a6\u30a3\u30f3Ver.\uff09",
+        "NameCN": "\u5e0c\u9732\u59ec\uff08\u4e07\u5723\u8282Ver.\uff09",
+        "Element": 4,
+        "Rarity": 4,
+        "Availability": [
+            "Limited",
+            "Gacha"
+        ]
+    },
+    "210005_01": {
+        "NameEN": "Zodiark",
+        "NameJP": "\u30be\u30c7\u30a3\u30a2\u30fc\u30af",
+        "NameCN": "\u4f50\u8fea\u4e9a\u514b",
+        "Element": 5,
+        "Rarity": 4,
+        "Availability": [
+            "Story"
+        ]
+    },
+    "210014_01": {
+        "NameEN": "Juggernaut",
+        "NameJP": "\u30b8\u30e3\u30ac\u30fc\u30ce\u30fc\u30c8",
+        "NameCN": "\u672d\u683c\u7eb3\u7279",
+        "Element": 5,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210015_01": {
+        "NameEN": "Silke",
+        "NameJP": "\u30b7\u30eb\u30ad\u30fc",
+        "NameCN": "\u5e0c\u9732\u59ec",
+        "Element": 5,
+        "Rarity": 4,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210089_01": {
+        "NameEN": "Bronze Fafnir",
+        "NameJP": "\u30d6\u30ed\u30f3\u30ba\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb",
+        "NameCN": "\u94dc\u6cd5\u592b\u7eb3",
+        "Element": 5,
+        "Rarity": 4,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210090_01": {
+        "NameEN": "Silver Fafnir",
+        "NameJP": "\u30b7\u30eb\u30d0\u30fc\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb",
+        "NameCN": "\u94f6\u6cd5\u592b\u7eb3",
+        "Element": 5,
+        "Rarity": 4,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210016_01": {
+        "NameEN": "Agni",
+        "NameJP": "\u30a2\u30b0\u30cb",
+        "NameCN": "\u963f\u683c\u5c3c",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210039_01": {
+        "NameEN": "High Brunhilda",
+        "NameJP": "\u771f\u30d6\u30ea\u30e5\u30f3\u30d2\u30eb\u30c7",
+        "NameCN": "\u771f\u5e03\u4f26\u5e0c\u5c14\u5fb7",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210057_01": {
+        "NameEN": "Pele",
+        "NameJP": "\u30da\u30ec",
+        "NameCN": "\u4f69\u96f7",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210024_01": {
+        "NameEN": "Cerberus",
+        "NameJP": "\u30b1\u30eb\u30d9\u30ed\u30b9",
+        "NameCN": "\u574e\u8d1d\u841d\u4e1d",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210055_01": {
+        "NameEN": "Erasmus",
+        "NameJP": "\u30a8\u30eb\u30e2",
+        "NameCN": "\u57c3\u5c14\u9ed8",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210052_01": {
+        "NameEN": "Prometheus",
+        "NameJP": "\u30d7\u30ed\u30e1\u30c6\u30a6\u30b9",
+        "NameCN": "\u666e\u7f57\u7c73\u4fee\u65af",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210082_01": {
+        "NameEN": "Konohana Sakuya",
+        "NameJP": "\u30b3\u30ce\u30cf\u30ca\u30b5\u30af\u30e4",
+        "NameCN": "\u6728\u82b1\u5f00\u8036",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210030_01": {
+        "NameEN": "Arctos",
+        "NameJP": "\u30a2\u30eb\u30af\u30c8\u30b9",
+        "NameCN": "\u963f\u5c14\u5e93\u7279\u65af",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210103_01": {
+        "NameEN": "Apollo",
+        "NameJP": "\u30a2\u30dd\u30ed\u30f3",
+        "NameCN": "\u963f\u6ce2\u7f57",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210107_01": {
+        "NameEN": "Kagutsuchi",
+        "NameJP": "\u30ab\u30b0\u30c4\u30c1",
+        "NameCN": "\u8fe6\u5177\u571f",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210121_01": {
+        "NameEN": "Rathalos",
+        "NameJP": "\u30ea\u30aa\u30ec\u30a6\u30b9",
+        "NameCN": "\u706b\u9f99",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Collab",
+            "Event Welfare"
+        ]
+    },
+    "210122_01": {
+        "NameEN": "Dreadking Rathalos",
+        "NameJP": "\u9ed2\u708e\u738b\u30ea\u30aa\u30ec\u30a6\u30b9",
+        "NameCN": "\u9ed1\u708e\u738b\u96c4\u706b\u9f99",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Collab",
+            "Gacha"
+        ]
+    },
+    "200009_01": {
+        "NameEN": "Mars",
+        "NameJP": "\u30de\u30fc\u30ba",
+        "NameCN": "\u739b\u65af",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Gala",
+            "Gacha"
+        ]
+    },
+    "210124_01": {
+        "NameEN": "Horus",
+        "NameJP": "\u30db\u30eb\u30b9",
+        "NameCN": "\u8377\u9c81\u65af",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210133_01": {
+        "NameEN": "Mini Hildy",
+        "NameJP": "\u30d6\u30ea\u30e5\u30f3\u30d2\u30eb\u30c7\uff08\u308a\u3085\u3046\u306e\u304a\u306b\u308fVer.\uff09",
+        "NameCN": "\u5e03\u4f26\u5e0c\u5c14\u5fb7\uff08\u9f99\u4e4b\u5ead\u9662Ver.\uff09",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210025_01": {
+        "NameEN": "Poseidon",
+        "NameJP": "\u30dd\u30bb\u30a4\u30c9\u30f3",
+        "NameCN": "\u6ce2\u585e\u51ac",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210040_01": {
+        "NameEN": "High Mercury",
+        "NameJP": "\u771f\u30de\u30fc\u30ad\u30e5\u30ea\u30fc",
+        "NameCN": "\u771f\u58a8\u4e18\u5229",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210017_01": {
+        "NameEN": "Leviathan",
+        "NameJP": "\u30ea\u30f4\u30a1\u30a4\u30a2\u30b5\u30f3",
+        "NameCN": "\u5229\u7ef4\u5766",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210054_01": {
+        "NameEN": "Siren",
+        "NameJP": "\u30bb\u30a4\u30ec\u30fc\u30f3",
+        "NameCN": "\u585e\u58ec",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210076_01": {
+        "NameEN": "Dragonyule Jeanne",
+        "NameJP": "\u30b8\u30e3\u30f3\u30cc\u30c0\u30eb\u30af\uff08\u661f\u7adc\u796dVer.\uff09",
+        "NameCN": "\u8d1e\u5fb7\uff08\u661f\u9f99\u796dVer.\uff09",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Limited",
+            "Gacha"
+        ]
+    },
+    "210079_01": {
+        "NameEN": "Peng Lai",
+        "NameJP": "\u30db\u30a6\u30e9\u30a4",
+        "NameCN": "\u84ec\u83b1",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210081_01": {
+        "NameEN": "Simurgh",
+        "NameJP": "\u30b7\u30fc\u30e0\u30eb\u30b0",
+        "NameCN": "\u601d\u6469\u592b",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210097_01": {
+        "NameEN": "Halloween Maritimus",
+        "NameJP": "\u30de\u30ea\u30c6\u30a3\u30e0\u30b9\uff08\u30cf\u30ed\u30a6\u30a3\u30f3Ver.\uff09",
+        "NameCN": "\u739b\u5229\u8482\u59c6\u65af\uff08\u4e07\u5723\u8282Ver.\uff09",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Limited",
+            "Gacha"
+        ]
+    },
+    "210109_01": {
+        "NameEN": "Kamuy",
+        "NameJP": "\u30ab\u30e0\u30a4",
+        "NameCN": "\u795e\u5a01",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210053_01": {
+        "NameEN": "Nimis",
+        "NameJP": "\u30b0\u30eb\u30de\u30f3",
+        "NameCN": "\u53e4\u9c81\u66fc",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210120_01": {
+        "NameEN": "Gaibhne & Creidhne",
+        "NameJP": "\u30b4\u30f4\u30cb\u30e5\uff06\u30af\u30ec\u30fc\u30cb\u30e5",
+        "NameCN": "\u683c\u5e03\u7ebd&\u514b\u96f7\u7ebd",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210130_01": {
+        "NameEN": "Styx",
+        "NameJP": "\u30b9\u30c6\u30e5\u30af\u30b9",
+        "NameCN": "\u65af\u5824\u514b\u65af",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210134_01": {
+        "NameEN": "Gala Reborn Poseidon",
+        "NameJP": "\u30dd\u30bb\u30a4\u30c9\u30f3\u30d6\u30ec\u30a4\u30f4\uff08\u30c9\u30e9\u30d5\u30a7\u30b9Ver.\uff09",
+        "NameCN": "\u65e0\u754f\u6ce2\u585e\u51ac\uff08Fes\u9650\u5b9aVer.\uff09",
+        "Element": 2,
+        "Rarity": 5,
+        "Availability": [
+            "Gala",
+            "Gacha"
+        ]
+    },
+    "210018_01": {
+        "NameEN": "Zephyr",
+        "NameJP": "\u30ef\u30ad\u30e4\u30f3",
+        "NameCN": "\u74e6\u57fa\u626c",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210038_01": {
+        "NameEN": "High Midgardsormr",
+        "NameJP": "\u771f\u30df\u30c9\u30ac\u30eb\u30ba\u30aa\u30eb\u30e0",
+        "NameCN": "\u771f\u8036\u68a6\u52a0\u5f97",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210010_01": {
+        "NameEN": "Sylvia",
+        "NameJP": "\u30b7\u30eb\u30f4\u30a3\u30a2",
+        "NameCN": "\u5e0c\u5c14\u7ef4\u4e9a",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210036_01": {
+        "NameEN": "Garuda",
+        "NameJP": "\u30ac\u30eb\u30fc\u30c0",
+        "NameCN": "\u8fe6\u697c\u7f57",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210080_01": {
+        "NameEN": "Long Long",
+        "NameJP": "\u30ed\u30f3\u30ed\u30f3",
+        "NameCN": "\u9f99\u9f99",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210026_01": {
+        "NameEN": "Pazuzu",
+        "NameJP": "\u30d1\u30ba\u30ba",
+        "NameCN": "\u5e15\u7956\u7956",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210074_01": {
+        "NameEN": "Yulong",
+        "NameJP": "\u30ae\u30e7\u30af\u30ea\u30e5\u30a6",
+        "NameCN": "\u7389\u9f99",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210084_01": {
+        "NameEN": "Freyja",
+        "NameJP": "\u30d5\u30ec\u30a4\u30e4",
+        "NameCN": "\u8299\u857e\u96c5",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210098_01": {
+        "NameEN": "Vayu",
+        "NameJP": "\u30f4\u30a1\u30fc\u30e6",
+        "NameCN": "\u4f10\u7531",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210111_01": {
+        "NameEN": "Mini Mids",
+        "NameJP": "\u30df\u30c9\u30ac\u30eb\u30ba\u30aa\u30eb\u30e0\uff08\u308a\u3085\u3046\u306e\u304a\u306b\u308fVer.\uff09",
+        "NameCN": "\u8036\u68a6\u52a0\u5f97\uff08\u9f99\u4e4b\u5ead\u9662Ver.\uff09",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210105_01": {
+        "NameEN": "Hastur",
+        "NameJP": "\u30cf\u30b9\u30bf\u30fc",
+        "NameCN": "\u54c8\u65af\u5854",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210117_01": {
+        "NameEN": "AC-011 Garland",
+        "NameJP": "AC-011 \u30ac\u30fc\u30e9\u30f3\u30c9",
+        "NameCN": "AC-011 \u52a0\u5170\u5fb7",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210116_01": {
+        "NameEN": "Ariel",
+        "NameJP": "\u30a2\u30ea\u30a8\u30eb",
+        "NameCN": "\u4e9a\u5217",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210125_01": {
+        "NameEN": "Summer Konohana Sakuya",
+        "NameJP": "\u30b3\u30ce\u30cf\u30ca\u30b5\u30af\u30e4\uff08\u30b5\u30de\u30fcVer.\uff09",
+        "NameCN": "\u6728\u82b1\u5f00\u8036\uff08\u590f\u65e5Ver.\uff09",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210131_01": {
+        "NameEN": "Midgardsormr Zero",
+        "NameJP": "\u30df\u30c9\u30ac\u30eb\u30ba\u30aa\u30eb\u30e0\u30bc\u30ed",
+        "NameCN": "\u59cb\u7956\u8036\u68a6\u52a0\u5f97",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210020_01": {
+        "NameEN": "Jeanne d'Arc",
+        "NameJP": "\u30b8\u30e3\u30f3\u30cc\u30c0\u30eb\u30af",
+        "NameCN": "\u8d1e\u5fb7",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210041_01": {
+        "NameEN": "High Jupiter",
+        "NameJP": "\u771f\u30e6\u30d4\u30c6\u30eb",
+        "NameCN": "\u771f\u6731\u5e87\u7279",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210056_01": {
+        "NameEN": "Corsaint Phoenix",
+        "NameJP": "\u30db\u30fc\u30ea\u30fc\u30d5\u30a7\u30cb\u30c3\u30af\u30b9",
+        "NameCN": "\u795e\u5723\u83f2\u5c3c\u514b\u65af",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210048_01": {
+        "NameEN": "Gilgamesh",
+        "NameJP": "\u30ae\u30eb\u30ac\u30e1\u30c3\u30b7\u30e5",
+        "NameCN": "\u5409\u5c14\u4f3d\u7f8e\u4ec0",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210049_01": {
+        "NameEN": "Cupid",
+        "NameJP": "\u30ad\u30e5\u30fc\u30d4\u30c3\u30c9",
+        "NameCN": "\u4e18\u6bd4\u7279",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210078_01": {
+        "NameEN": "Shishimai",
+        "NameJP": "\u30b7\u30b7\u30de\u30a4",
+        "NameCN": "\u72ee\u5b50\u821e",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210043_01": {
+        "NameEN": "Liger",
+        "NameJP": "\u30e9\u30a4\u30ac",
+        "NameCN": "\u96f7\u7259",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210051_01": {
+        "NameEN": "Takemikazuchi",
+        "NameJP": "\u30bf\u30b1\u30df\u30ab\u30c5\u30c1",
+        "NameCN": "\u5efa\u5fa1\u96f7",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210094_01": {
+        "NameEN": "Pop-Star Siren",
+        "NameJP": "\u30bb\u30a4\u30ec\u30fc\u30f3\uff08\u30e9\u30a4\u30d6Ver.\uff09",
+        "NameCN": "\u585e\u58ec\uff08\u6f14\u51faVer.\uff09",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210110_01": {
+        "NameEN": "Daikokuten",
+        "NameJP": "\u30c0\u30a4\u30b3\u30af\u30c6\u30f3",
+        "NameCN": "\u5927\u9ed1\u5929",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Limited",
+            "Gacha"
+        ]
+    },
+    "210085_01": {
+        "NameEN": "Tie Shan Gongzhu",
+        "NameJP": "\u30c6\u30c3\u30bb\u30f3\u30b3\u30a6\u30b7\u30e5",
+        "NameCN": "\u94c1\u6247\u516c\u4e3b",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "200018_01": {
+        "NameEN": "Gala Thor",
+        "NameJP": "\u30c8\u30fc\u30eb\uff08\u30c9\u30e9\u30d5\u30a7\u30b9Ver.\uff09",
+        "NameCN": "\u6258\u5c14\uff08Fes\u9650\u5b9aVer.\uff09",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Gala",
+            "Gacha"
+        ]
+    },
+    "210142_01": {
+        "NameEN": "Lumi\u00e8re Pandora",
+        "NameJP": "\u30eb\u30df\u30a8\u30fc\u30eb\u30d1\u30f3\u30c9\u30e9",
+        "NameCN": "\u5149\u660e\u6f58\u591a\u62c9",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210019_01": {
+        "NameEN": "Nidhogg",
+        "NameJP": "\u30cb\u30fc\u30ba\u30d8\u30c3\u30b0",
+        "NameCN": "\u5c3c\u5fb7\u970d\u683c",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210042_01": {
+        "NameEN": "High Zodiark",
+        "NameJP": "\u771f\u30be\u30c7\u30a3\u30a2\u30fc\u30af",
+        "NameCN": "\u771f\u4f50\u8fea\u4e9a\u514b",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210045_01": {
+        "NameEN": "Phantom",
+        "NameJP": "\u30d5\u30a1\u30f3\u30c8\u30e0",
+        "NameCN": "\u5e7d\u5f71",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210072_01": {
+        "NameEN": "Maritimus",
+        "NameJP": "\u30de\u30ea\u30c6\u30a3\u30e0\u30b9",
+        "NameCN": "\u739b\u5229\u8482\u59c6\u65af",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210077_01": {
+        "NameEN": "Marishiten",
+        "NameJP": "\u30de\u30ea\u30b7\u30c6\u30f3",
+        "NameCN": "\u6469\u5229\u652f\u5929",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Limited",
+            "Gacha"
+        ]
+    },
+    "210091_01": {
+        "NameEN": "Gold Fafnir",
+        "NameJP": "\u30b4\u30fc\u30eb\u30c9\u30d5\u30a1\u30d5\u30cb\u30fc\u30eb",
+        "NameCN": "\u91d1\u6cd5\u592b\u7eb3",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210046_01": {
+        "NameEN": "Nyarlathotep",
+        "NameJP": "\u30cb\u30e3\u30eb\u30e9\u30c8\u30db\u30c6\u30d7",
+        "NameCN": "\u5948\u4e9a\u62c9\u6258\u63d0\u666e",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210087_01": {
+        "NameEN": "Shinobi",
+        "NameJP": "\u30b7\u30ce\u30d3",
+        "NameCN": "\u5fcd",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "200010_01": {
+        "NameEN": "Chthonius",
+        "NameJP": "\u30d7\u30eb\u30fc\u30c8\u30fc",
+        "NameCN": "\u666e\u9c81\u6258",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210095_01": {
+        "NameEN": "Parallel Zodiark",
+        "NameJP": "\u7570\u5929\u30be\u30c7\u30a3\u30a2\u30fc\u30af",
+        "NameCN": "\u5f02\u5929\u4f50\u8fea\u4e9a\u514b",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210114_01": {
+        "NameEN": "Ebisu",
+        "NameJP": "\u30a8\u30d3\u30b9",
+        "NameCN": "\u60e0\u6bd4\u5bff",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210123_01": {
+        "NameEN": "Fatalis",
+        "NameJP": "\u30df\u30e9\u30dc\u30ec\u30a2\u30b9",
+        "NameCN": "\u9ed1\u9f99",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Collab",
+            "Gacha"
+        ]
+    },
+    "210112_01": {
+        "NameEN": "Epimetheus",
+        "NameJP": "\u30a8\u30d4\u30e1\u30c6\u30a6\u30b9",
+        "NameCN": "\u57c3\u5e87\u7c73\u4fee\u65af",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210127_01": {
+        "NameEN": "Mini Zodi",
+        "NameJP": "\u30be\u30c7\u30a3\u30a2\u30fc\u30af\uff08\u308a\u3085\u3046\u306e\u304a\u306b\u308fVer.\uff09",
+        "NameCN": "\u4f50\u8fea\u4e9a\u514b\uff08\u9f99\u4e4b\u5ead\u9662Ver.\uff09",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Treasure Trade"
+        ]
+    },
+    "210115_01": {
+        "NameEN": "Andromeda",
+        "NameJP": "\u30a2\u30f3\u30c9\u30ed\u30e1\u30c0",
+        "NameCN": "\u5b89\u5fb7\u6d1b\u58a8\u8fbe",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210083_01": {
+        "NameEN": "Barbatos",
+        "NameJP": "\u30d0\u30eb\u30d0\u30c8\u30b9",
+        "NameCN": "\u5df4\u5df4\u6258\u65af",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Event Welfare"
+        ]
+    },
+    "210126_01": {
+        "NameEN": "Azazel",
+        "NameJP": "\u30a2\u30b6\u30bc\u30eb",
+        "NameCN": "\u963f\u6492\u5179\u52d2",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "200017_01": {
+        "NameEN": "Cat S\u00ecth",
+        "NameJP": "\u30b1\u30c3\u30c8\u30b7\u30fc",
+        "NameCN": "\u51ef\u7279\u897f",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Gala",
+            "Gacha"
+        ]
+    },
+    "210132_01": {
+        "NameEN": "Ramiel",
+        "NameJP": "\u30e9\u30df\u30a8\u30eb",
+        "NameCN": "\u62c9\u7c73\u827e\u5c14",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
+    "210135_01": {
+        "NameEN": "Giovanni",
+        "NameJP": "\u30d9\u30eb\u30ab\u30f3\u30c8",
+        "NameCN": "\u8d1d\u5c14\u574e\u7279",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    }
+}

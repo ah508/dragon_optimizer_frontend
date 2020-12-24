@@ -18,6 +18,7 @@
 }
 
 .buttonlabel {
+    user-select: none;
     display: block;
     border-radius: 5px;
     min-width: 15%;

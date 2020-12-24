@@ -9,7 +9,11 @@ function GenericTable(props) {
                     return (
                         <tr key={action.id}>
                             <td className="leftrow">{action.id} </td>
-                            <td className="rightrow">{action.value}</td>
+                            {
+                            (typeof action.value) === "number" ?
+                                <td className="rightrow">{action.value.toPrecision(4) / 1}</td> :
+                                <td className="rightrow">{action.value}</td>
+                            }
                         </tr>
                         )
                     })

@@ -36,6 +36,7 @@ a:visited {
 }
 
 .linkbox {
+  user-select: none;
   position: relative;
   width: 20%;
   height: 40px;

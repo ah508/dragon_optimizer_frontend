@@ -103,7 +103,7 @@ function OptionSelect(props) {
     const [critM, setCritM] = useState(0)
     const [afflicPUN, setAfflicPUN] = useState(0)
     const [brk, setBRK] = useState(false)
-    const [brkMOD, setbrkMOD] = useState(0)
+    const [brkMOD, setbrkMOD] = useState(0.6)
     const [brkPUN, setbrkPUN] = useState(0)
     const [baseDEF, setBaseDEF] = useState(10)
     const [modDEF, setModDEF] = useState(0)
@@ -123,7 +123,7 @@ function OptionSelect(props) {
     //testing values
     const forbidden = [
         false, 
-        "Thor", 
+        "Gala Thor", 
         "Giovanni", 
         "Shishimai", 
         "Mini Hildy", 
@@ -198,19 +198,19 @@ function OptionSelect(props) {
             "stats": stats
         }
         
-        setapiResponse(fillerAPIStuff)
+        // setapiResponse(fillerAPIStuff)
 
         // async POST submission json
-        // fetch('http://localhost:5000/api/optimize', {
-        //     method: 'POST',
-        //     mode: "no-cors",
-        //     headers: {
-        //         'Content-Type': 'application.json',
-        //     },
-        //     body: JSON.stringify(submission),
-        // })
-        // .then(response => response.json)
-        // .then(data => {setapiResponse(data)})
+        fetch('http://ec2-18-219-252-55.us-east-2.compute.amazonaws.com/api/optimize', {
+            method: 'POST',
+            // mode: "no-cors",
+            headers: {
+                'Content-Type': 'application.json',
+            },
+            body: JSON.stringify(submission),
+        })
+        .then(response => response.json())
+        .then(data => setapiResponse(data))
         // not sure if this is the right way to structure the response
     }
 
@@ -300,8 +300,8 @@ function OptionSelect(props) {
                                                 id={"baseDEF".concat(props.id)} 
                                                 value={baseDEF} 
                                                 onChange={e => setBaseDEF(e.currentTarget.value)}
-                                                min="0.00"
-                                                step="0.1"
+                                                min="0.01"
+                                                step="0.01"
                                                 disabled={forbidden.includes(dragon)}
                                             />
                                         </div>
@@ -552,7 +552,7 @@ function OptionSelect(props) {
                                         id={"brkMod".concat(props.id)} 
                                         value={brkMOD} 
                                         onChange={e => setbrkMOD(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="0.01"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />

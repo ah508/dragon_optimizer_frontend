@@ -79,6 +79,7 @@ ul {
 }
 
 .for_submission {
+    user-select: none;
     display: inline-flex;
     align-items: center;
     font-size: medium;
@@ -106,6 +107,7 @@ ul {
 }
 
 .for_advanced {
+    user-select: none;
     display: inline-flex;
     align-items: center;
     font-size: medium;

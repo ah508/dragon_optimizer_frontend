@@ -75,7 +75,11 @@ ul {
 }
 
 .submit_button {
-    display: none;
+    position: absolute; 
+    overflow: hidden; 
+    clip-path: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0;
 }
 
 .for_submission {
@@ -90,7 +94,7 @@ ul {
     transition: all 100ms ease-in
 }
 
-.for_submission:hover {
+.for_submission:hover, .submit_button:focus + .for_submission {
     background-color: #a2faa2;
 }
 
@@ -103,7 +107,11 @@ ul {
 }
 
 .disp_advanced {
-    display: none;
+    position: absolute; 
+    overflow: hidden; 
+    clip-path: rect(0 0 0 0); 
+    height: 1px; width: 1px; 
+    margin: -1px; padding: 0; border: 0;
 }
 
 .for_advanced {

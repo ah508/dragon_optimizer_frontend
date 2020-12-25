@@ -131,24 +131,31 @@ function OptionSelect(props) {
         "Barbatos", 
         "Horus",
     ]
-    const fillerAPIStuff = {
-        dataTable: [
-            {id: 'damage', value: 5000},
-            {id: 'realframes', value: 711},
-            {id: 'dragframes', value: 588},
-            {id: 'dps', value: 83.3}
-        ],
-        decisionVariables: [
-            {id: "TransformT", value: 1},
-            {id: "NormalC1a", value: 5},
-            {id: "NormalC1b", value: 5},
-            {id: "NormalC2", value: 5},
-            {id: "NormalC3", value: 2},
-            {id: "NormalD", value: 3},
-            {id: "NormalS", value: 1},
-        ],
-        rules: {}
-    }
+    // const fillerAPIStuff = {
+    //     dataTable: [
+    //         {id: 'damage', value: 5000},
+    //         {id: 'realframes', value: 711},
+    //         {id: 'dragframes', value: 588},
+    //         {id: 'dps', value: 83.3}
+    //     ],
+    //     decisionVariables: [
+    //         {id: "TransformT", value: 1},
+    //         {id: "NormalC1a", value: 5},
+    //         {id: "NormalC1b", value: 5},
+    //         {id: "NormalC2", value: 5},
+    //         {id: "NormalC3", value: 2},
+    //         {id: "NormalD", value: 3},
+    //         {id: "NormalS", value: 1},
+    //         {id: "TransformT", value: 1},
+    //         {id: "NormalC1a", value: 5},
+    //         {id: "NormalC1b", value: 5},
+    //         {id: "NormalC2", value: 5},
+    //         {id: "NormalC3", value: 2},
+    //         {id: "NormalD", value: 3},
+    //         {id: "NormalS", value: 1},
+    //     ],
+    //     rules: {}
+    // }
     //end testing values
 
     const handleSubmit = (evt) => {
@@ -212,6 +219,7 @@ function OptionSelect(props) {
         .then(response => response.json())
         .then(data => setapiResponse(data))
         // not sure if this is the right way to structure the response
+        // nvm seems to work right
     }
 
     return (

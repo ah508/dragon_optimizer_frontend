@@ -9,7 +9,6 @@
     min-width: 150px;
     background-color: beige;
     overflow-y: scroll;
-    /* scrollbar-width: none; */
 }
 
 .bufferzone {

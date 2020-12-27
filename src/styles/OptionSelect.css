@@ -93,11 +93,11 @@ ul {
     user-select: none;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     font-size: medium;
     margin-left: 4px;
     margin-right: 4px;
-    width: 50%;
-    justify-content: left;
+    width: 100%;
     border-radius: 4px;
 }
 
@@ -114,9 +114,27 @@ ul {
     border-left: 1px solid #000;
     border-bottom: 1px solid #000;
 }
+.for_advanced::before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    right: 7px;
+    width: 7px;
+    height: 7px;
+    transition: all 200ms ease-in-out;
+    transform: rotate(-45deg);
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
 
 .for_advanced:hover::after {
     transform: rotate(-45deg);
+    bottom: 2px;
+}
+
+.for_advanced:hover::before{
+    transform: rotate(45deg);
     bottom: 2px;
 }
 

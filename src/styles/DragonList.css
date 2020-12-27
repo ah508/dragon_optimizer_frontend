@@ -46,7 +46,12 @@
 }
 
 .cross {
-    fill:rgba(0, 0, 0, 0.5);
+    opacity: 0.3;
+    transition: opacity 200ms ease-out;
+}
+
+.cross:hover {
+    opacity: .9;
 }
 
 .buttonholder {
@@ -85,4 +90,9 @@
 
 .buttonlabel:active {
     background-color: #76db76;
+}
+
+button:focus + .x-out {
+    outline: 2px solid black;
+    outline-offset: 5px;
 }

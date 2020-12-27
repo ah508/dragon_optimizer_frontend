@@ -49,7 +49,7 @@ function DragonList() {
         const divHeight = {zIndex: 999-dragon};
         return (
           <div key={dragon} style={divHeight} className={"OSelect-header ".concat(getColor(dragon))}>
-            <OptionSelect key={dragon} id={dragon}/>
+            <OptionSelect key={dragon} id={dragon} color={getColor(dragon)}/>
             <button className="buttonbody" id={"remove".concat(dragon)} tabIndex="0" onClick={() => remDragon(dragon)} />
             <label htmlFor={"remove".concat(dragon)} className="x-out">
               <Cross size="18"/>

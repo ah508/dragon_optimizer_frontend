@@ -60,7 +60,7 @@ function Home() {
       <section className="sectionbody">
         <h4>Special thanks to:</h4>
         <p>
-          Nyara, Chu, Qwe, and anyone who sent framedata/combos for verification
+          Nyara, Chu, Qwe, Hank, and anyone who sent framedata/combos for verification
         </p>
       </section>
       <div className="emptydiv"></div>

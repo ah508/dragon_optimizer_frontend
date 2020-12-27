@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import SelectSearch from "react-select-search"
 import GenericTable from "./GenericTable"
+import Toggletip from "./Toggletip"
 import "../styles/OptionSelect.css"
 import "../styles/Searchbox.css"
 
@@ -350,13 +351,13 @@ function OptionSelect(props) {
                         <div className="oddones">
                             <input className="submit_button"
                                 type="submit"
-                                id={"submission".concat(props.id)}
+                                id={`submission${props.id}`}
                                 value="Optimize!" 
                                 disabled={forbidden.includes(dragon)} 
                             />
                             <label 
-                                htmlFor={"submission".concat(props.id)}
-                                className="for_submission"
+                                htmlFor={`submission${props.id}`}
+                                className={`for_submission ${props.color}c`}
                                 disabled={forbidden.includes(dragon)}
                             >
                                 Optimize!

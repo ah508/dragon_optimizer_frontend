@@ -29,6 +29,11 @@ ul {
     flex-direction: row;
 }
 
+/* .form-element .tip {
+    width: 5%;
+    padding-right: 5px;
+} */
+
 .form-element label {
     user-select: none;
     width: 95%;
@@ -56,25 +61,56 @@ ul {
 
 .for_submission {
     user-select: none;
+    font-weight: 400;
     margin-bottom: 3px;
     display: inline-flex;
     align-items: center;
-    background-color:rgba(236, 236, 152, 0.295);
-    box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     font-size: medium;
     margin-left: 4px;
     margin-right: 4px;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 10px;
     transition: all 100ms ease-in
 }
 
-.for_submission:hover, .submit_button:focus + .for_submission {
+.bluec {
+    background-color: #a2cafa;
+}
+
+.bluec:hover, .submit_button:focus + .bluec{
+    background-color: #76a4db;
+}
+
+.greenc {
     background-color: #a2faa2;
 }
 
-.for_submission:active {
+.greenc:hover, .submit_button:focus + .greenc {
     background-color: #76db76;
+}
+
+.redc {
+    background-color: #faa5a5;
+}
+
+.redc:hover, .submit_button:focus + .redc {
+ background-color: #db7676;
+}
+
+.yellowc {
+    background-color: #faeba2;
+}
+
+.yellowc:hover, .submit_button:focus + .yellowc {
+    background-color: #dbca76;
+}
+
+/* .for_submission:hover, .submit_button:focus + .for_submission {
+    background-color: #a2faa2;
+} */
+
+.for_submission:active {
+    background-color: rgba(218, 165, 32, 0.418);
 }
 
 .submit_button:disabled+.for_submission {

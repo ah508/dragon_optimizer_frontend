@@ -111,7 +111,7 @@ function OptionSelect(props) {
     const [eleADV, setEleADV] = useState(1)
     const [bufftime, setBufftime] = useState(0)
     const [haste, setHaste] = useState(0)
-    const [dboost, setDboost] = useState(0)
+    const [dboost, setDboost] = useState(0.2)
     const [energized, setEnergized] = useState(false)
     const [inspired, setInspired] = useState(false)
     const [bog, setBog] = useState(false)
@@ -131,31 +131,31 @@ function OptionSelect(props) {
         "Barbatos", 
         "Horus",
     ]
-    // const fillerAPIStuff = {
-    //     dataTable: [
-    //         {id: 'damage', value: 5000},
-    //         {id: 'realframes', value: 711},
-    //         {id: 'dragframes', value: 588},
-    //         {id: 'dps', value: 83.3}
-    //     ],
-    //     decisionVariables: [
-    //         {id: "TransformT", value: 1},
-    //         {id: "NormalC1a", value: 5},
-    //         {id: "NormalC1b", value: 5},
-    //         {id: "NormalC2", value: 5},
-    //         {id: "NormalC3", value: 2},
-    //         {id: "NormalD", value: 3},
-    //         {id: "NormalS", value: 1},
-    //         {id: "TransformT", value: 1},
-    //         {id: "NormalC1a", value: 5},
-    //         {id: "NormalC1b", value: 5},
-    //         {id: "NormalC2", value: 5},
-    //         {id: "NormalC3", value: 2},
-    //         {id: "NormalD", value: 3},
-    //         {id: "NormalS", value: 1},
-    //     ],
-    //     rules: {}
-    // }
+    const fillerAPIStuff = {
+        dataTable: [
+            {id: 'damage', value: 5000},
+            {id: 'realframes', value: 711},
+            {id: 'dragframes', value: 588},
+            {id: 'dps', value: 83.3}
+        ],
+        decisionVariables: [
+            {id: "TransformT", value: 1},
+            {id: "NormalC1a", value: 5},
+            {id: "NormalC1b", value: 5},
+            {id: "NormalC2", value: 5},
+            {id: "Boost1_1_DUMMY_C3", value: 2},
+            {id: "NormalD", value: 3},
+            {id: "NormalS", value: 1},
+            {id: "TransformT", value: 1},
+            {id: "NormalC1a", value: 5},
+            {id: "NormalC1b", value: 5},
+            {id: "NormalC2", value: 5},
+            {id: "NormalC3", value: 2},
+            {id: "NormalD", value: 3},
+            {id: "NormalS", value: 1},
+        ],
+        rules: {}
+    }
     //end testing values
 
     const handleSubmit = (evt) => {
@@ -205,25 +205,25 @@ function OptionSelect(props) {
             "stats": stats
         }
         
-        // setapiResponse(fillerAPIStuff)
+        setapiResponse(fillerAPIStuff)
 
         // async POST submission json
-        fetch('http://ec2-18-219-252-55.us-east-2.compute.amazonaws.com/api/optimize', {
-            method: 'POST',
-            // mode: "no-cors",
-            headers: {
-                'Content-Type': 'application.json',
-            },
-            body: JSON.stringify(submission),
-        })
-        .then(response => response.json())
-        .then(data => setapiResponse(data))
+        // fetch('http://ec2-18-189-28-98.us-east-2.compute.amazonaws.com/api/optimize', {
+        //     method: 'POST',
+        //     // mode: "no-cors",
+        //     headers: {
+        //         'Content-Type': 'application.json',
+        //     },
+        //     body: JSON.stringify(submission),
+        // })
+        // .then(response => response.json())
+        // .then(data => setapiResponse(data))
         // not sure if this is the right way to structure the response
         // nvm seems to work right
     }
 
     return (
-        <div className={props.className}>
+        <>
             <div className="inputbucket">
                 <img className="dragonphoto" src={getImage[dragon]} alt="" />
                 <SelectSearch
@@ -385,7 +385,7 @@ function OptionSelect(props) {
                                         id={"passiveSTR".concat(props.id)} 
                                         value={passiveSTR} 
                                         onChange={e => setPassiveSTR(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.99"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -401,7 +401,7 @@ function OptionSelect(props) {
                                         id={"activeSTR".concat(props.id)} 
                                         value={activeSTR} 
                                         onChange={e => setActiveSTR(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.50"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -431,7 +431,7 @@ function OptionSelect(props) {
                                         id={"passiveFS".concat(props.id)} 
                                         value={passiveFS} 
                                         onChange={e => setPassiveFS(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.99"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -447,7 +447,7 @@ function OptionSelect(props) {
                                         id={"activeFS".concat(props.id)} 
                                         value={activeFS} 
                                         onChange={e => setActiveFS(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.99"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -475,7 +475,7 @@ function OptionSelect(props) {
                                         id={"passiveSKD".concat(props.id)} 
                                         value={passiveSKD} 
                                         onChange={e => setPassiveSKD(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.99"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -489,7 +489,7 @@ function OptionSelect(props) {
                                         id={"activeSKD".concat(props.id)} 
                                         value={activeSKD} 
                                         onChange={e => setActiveSKD(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.99"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -532,7 +532,7 @@ function OptionSelect(props) {
                                         id={"critM".concat(props.id)} 
                                         value={critM} 
                                         onChange={e => setCritM(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-1.5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -589,20 +589,21 @@ function OptionSelect(props) {
                                         value={modDEF} 
                                         onChange={e => setModDEF(e.currentTarget.value)}
                                         min="0.00"
+                                        max="0.50"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"eleRES".concat(props.id)}>
-                                        Enemy Damage Resistance
+                                        Elemental Resistance Debuff
                                     </label>
                                     <input 
                                         type="number" 
                                         id={"eleRES".concat(props.id)} 
                                         value={eleRES} 
                                         onChange={e => setEleRES(e.currentTarget.value)}
-                                        min="0.00"
+                                        min="-0.99"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -623,7 +624,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"dboost".concat(props.id)}>
-                                        Dragon Boost
+                                        Bonus Dragon Damage
                                     </label>
                                     <input 
                                         type="number" 
@@ -732,7 +733,7 @@ function OptionSelect(props) {
             <GenericTable headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/>
             <GenericTable headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
             {/* <ViableString solveresults={apiResponse.dataTable}/> */}
-        </div>
+        </>
     )
 }
 

@@ -8,7 +8,8 @@
     font-size: large;
     min-width: 150px;
     background-color: beige;
-    overflow: auto;
+    overflow-y: scroll;
+    /* scrollbar-width: none; */
 }
 
 .bufferzone {

@@ -1,12 +1,52 @@
 .draglist {
     background-color: transparent;
     margin: 0;
-    min-height: 120vh;
     display: flex;
     flex-direction: column;
-    align-items: top;
     flex-basis: 20%;
     font-size: calc(10px + 2vmin);
+}
+
+.OSelect-header {
+    /* NOTE: z-index is set inline
+    this is necessary due to set stacking contexts correctly */
+    background-color: white;
+    position: relative;
+    border-radius: 5px;
+    min-height: 200px;
+    max-height: 275px;
+    min-width: min-content;
+    padding: 4px;
+    margin: 4px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 20%;
+}
+
+.blue {
+    background-image: url("./backgrounds/blue_bg_edit.png");
+}
+  
+.green {
+    background-image: url("./backgrounds/green_bg_edit.png");
+}
+  
+.red {
+    background-image: url("./backgrounds/red_bg_edit.png");
+}
+  
+.yellow {
+    background-image: url("./backgrounds/yellow_bg_edit.png");
+}
+
+.x-out {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+
+.cross {
+    fill:rgba(0, 0, 0, 0.5);
 }
 
 .buttonholder {
@@ -14,7 +54,8 @@
 }
 
 .buttonbody {
-    position: absolute; 
+    position: absolute;
+    left: -999px;
     overflow: hidden; 
     clip-path: rect(0 0 0 0); 
     height: 1px; width: 1px; 
@@ -35,6 +76,10 @@
 }
 
 .buttonlabel:hover {
+    background-color: #a2faa2;
+}
+
+.buttonbody:focus + .buttonlabel {
     background-color: #a2faa2;
 }
 

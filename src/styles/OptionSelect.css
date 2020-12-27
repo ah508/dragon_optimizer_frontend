@@ -4,36 +4,6 @@ ul {
     padding-inline-start: 0;
 }
 
-.OSelect-header {
-    background-color: white;
-    border-radius: 5px;
-    min-height: 200px;
-    max-height: 275px;
-    min-width: min-content;
-    padding: 4px;
-    margin: 4px;
-    display: flex;
-    flex-direction: row;
-    align-items: top;
-    flex-basis: 20%;
-}
-
-.blue {
-    background-image: url("./backgrounds/blue_bg_edit.png");
-}
-  
-.green {
-    background-image: url("./backgrounds/green_bg_edit.png");
-}
-  
-.red {
-    background-image: url("./backgrounds/red_bg_edit.png");
-}
-  
-.yellow {
-    background-image: url("./backgrounds/yellow_bg_edit.png");
-}
-
 .inputbucket {
     margin: 4px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
@@ -60,6 +30,7 @@ ul {
 }
 
 .form-element label {
+    user-select: none;
     width: 95%;
     justify-self: left;
 }
@@ -76,7 +47,8 @@ ul {
 
 .submit_button {
     position: absolute; 
-    overflow: hidden; 
+    overflow: hidden;
+    left: -999px;
     clip-path: rect(0 0 0 0); 
     height: 1px; width: 1px; 
     margin: -1px; padding: 0; border: 0;
@@ -84,8 +56,11 @@ ul {
 
 .for_submission {
     user-select: none;
+    margin-bottom: 3px;
     display: inline-flex;
     align-items: center;
+    background-color:rgba(236, 236, 152, 0.295);
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.5);
     font-size: medium;
     margin-left: 4px;
     margin-right: 4px;

@@ -1,6 +1,25 @@
 import React, {useState} from "react"
 import OptionSelect from "./OptionSelect"
 import "../styles/DragonList.css"
+// import {ReactComponent as Cross} from "../styles/others/cross.svg"
+
+function Cross(props) {
+  return (
+    <svg 
+      width={props.size} 
+      height={props.size}
+      viewBox="0 0 100 100"
+      version="1.1" 
+      xmlns="http://www.w3.org/2000/svg">
+    <path d="M 10 10 L 90 90" stroke="black" stroke-width="14" />
+    <path d="M 10 90 L 90 10" stroke="black" stroke-width="14" />
+    <circle cx="10" cy="10" r="7" fill="black"/>
+    <circle cx="90" cy="90" r="7" fill="black"/>
+    <circle cx="90" cy="10" r="7" fill="black"/>
+    <circle cx="10" cy="90" r="7" fill="black"/>
+    </svg>
+  )
+}
 
 function DragonList() {
   const [dragons, setDragons] = useState([])
@@ -9,28 +28,39 @@ function DragonList() {
 
   const addDragon = (evt) => {
     evt.preventDefault()
-    setDragons(dragons => [...dragons, [lastkey, [colors[Math.abs(lastkey%4)]]]])
+    setDragons(dragons => [...dragons, lastkey])
     setLastkey(key => key+1)
   }
 
-  const remDragon = (evt) => {
-    evt.preventDefault()
-    setDragons(dragons => dragons.slice(0, -1))
-    setLastkey(key => key-1)
+  const getColor = (keynum) => colors[Math.abs(keynum%4)]
+
+  function remDragon(drop) {
+    // console.log(drop)
+    // evt.preventDefault()
+    // setDragons(dragons => dragons.slice(0, -1))
+    setDragons(dragons => dragons.filter(item => item !== drop))
   }
 
   return (
     <div className="draglist">
-      {dragons.map(dragon => <OptionSelect key={dragon[0]} id={dragon[0]} className={"OSelect-header ".concat(dragon[1])}/>)}
+      {console.log(dragons)}
+      {dragons.map(dragon => {
+        const divHeight = {zIndex: 999-dragon};
+        return (
+          <div key={dragon} style={divHeight} className={"OSelect-header ".concat(getColor(dragon))}>
+            <OptionSelect key={dragon} id={dragon}/>
+            <button className="buttonbody" id={"remove".concat(dragon)} onClick={() => remDragon(dragon)} />
+            <label htmlFor={"remove".concat(dragon)} className="x-out">
+              <Cross size="18" className="cross"/>
+            </label>
+          </div>
+        )
+      })}
       <div className="buttonholder" >
+        <button className="buttonbody" id="add" onClick={addDragon} />
         <label htmlFor="add" className="buttonlabel">
           Add
         </label>
-        <button className="buttonbody" id="add" onClick={addDragon} />
-        <label htmlFor="remove" className="buttonlabel">
-          Remove
-        </label>
-        <button className="buttonbody" id="remove" onClick={remDragon} />
       </div>
     </div>
   )

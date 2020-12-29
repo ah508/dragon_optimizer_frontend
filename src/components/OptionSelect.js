@@ -270,19 +270,19 @@ function OptionSelect(props) {
         submission["dragon"] = dragon
         submission["stats"] = Object.assign({}, stats)
         
-        setapiResponse(fillerAPIStuff)
+        // setapiResponse(fillerAPIStuff)
 
         // async POST submission json
-        // fetch('http://ec2-18-189-28-98.us-east-2.compute.amazonaws.com/api/optimize', {
-        //     method: 'POST',
-        //     // mode: "no-cors",
-        //     headers: {
-        //         'Content-Type': 'application.json',
-        //     },
-        //     body: JSON.stringify(submission),
-        // })
-        // .then(response => response.json())
-        // .then(data => setapiResponse(data))
+        fetch('https://dldragonopt.app/api/optimize', {
+            method: 'POST',
+            // mode: "no-cors",
+            headers: {
+                'Content-Type': 'application.json',
+            },
+            body: JSON.stringify(submission),
+        })
+        .then(response => response.json())
+        .then(data => setapiResponse(data))
         // not sure if this is the right way to structure the response
         // nvm seems to work right
     }

@@ -818,6 +818,17 @@
             "Gacha"
         ]
     },
+    "210143_01": {
+        "NameEN": "Gala Reborn Zephyr",
+        "NameJP": "ワキヤンブレイヴ",
+        "NameCN": "无畏瓦基扬",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Gala",
+            "Gacha"
+        ]
+    },
     "210020_01": {
         "NameEN": "Jeanne d'Arc",
         "NameJP": "\u30b8\u30e3\u30f3\u30cc\u30c0\u30eb\u30af",

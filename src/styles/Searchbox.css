@@ -112,19 +112,67 @@
     height: 48px;
 }
 
-.select-search__option.is-selected {
+.blue .select-search__option.is-selected {
+    background: #76a4db; /* highlight color when selected */
+    color: #000;
+}
+
+.blue .select-search__option.is-highlighted,
+.blue .select-search__option:not(.is-selected):hover {
+    background: #a2cafa;
+}
+
+.blue .select-search__option.is-highlighted.is-selected,
+.blue .select-search__option.is-selected:hover {
+    background: #a2cafa;
+    color: #000;
+}
+
+.green .select-search__option.is-selected {
     background: #76db76; /* highlight color when selected */
     color: #000;
 }
 
-.select-search__option.is-highlighted,
-.select-search__option:not(.is-selected):hover {
+.green .select-search__option.is-highlighted,
+.green .select-search__option:not(.is-selected):hover {
     background: #a2faa2;
 }
 
-.select-search__option.is-highlighted.is-selected,
-.select-search__option.is-selected:hover {
+.green .select-search__option.is-highlighted.is-selected,
+.green .select-search__option.is-selected:hover {
     background: #a2faa2;
+    color: #000;
+}
+
+.red .select-search__option.is-selected {
+    background: #db7676; /* highlight color when selected */
+    color: #000;
+}
+
+.red .select-search__option.is-highlighted,
+.red .select-search__option:not(.is-selected):hover {
+    background: #faa5a5;
+}
+
+.red .select-search__option.is-highlighted.is-selected,
+.red .select-search__option.is-selected:hover {
+    background: #faa5a5;
+    color: #000;
+}
+
+.yellow .select-search__option.is-selected {
+    background: #dbca76; /* highlight color when selected */
+    color: #000;
+}
+
+.yellow .select-search__option.is-highlighted,
+.yellow .select-search__option:not(.is-selected):hover {
+    background: #faeba2;
+}
+
+.yellow .select-search__option.is-highlighted.is-selected,
+.yellow .select-search__option.is-selected:hover {
+    background: #faeba2;
     color: #000;
 }
 
@@ -151,8 +199,20 @@
     cursor: default;
 }
 
-.select-search:not(.select-search--multiple) .select-search__input:hover {
+.blue .select-search:not(.select-search--multiple) .select-search__input:hover {
+    border-color:#a2cafa;
+}
+
+.green .select-search:not(.select-search--multiple) .select-search__input:hover {
     border-color:#a2faa2;
+}
+
+.red .select-search:not(.select-search--multiple) .select-search__input:hover {
+    border-color:#faa5a5;
+}
+
+.yellow .select-search:not(.select-search--multiple) .select-search__input:hover {
+    border-color:#faeba2;
 }
 
 

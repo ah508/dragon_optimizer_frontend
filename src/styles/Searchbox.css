@@ -38,7 +38,7 @@
 .select-search__input { /* the initial input box */
     display: block;
     height: 70px;
-    min-width: 330px;
+    min-width: 340px;
     width: 100%;
     padding: 0 16px;
     background: #fff;

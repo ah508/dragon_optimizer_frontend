@@ -23,53 +23,19 @@ function GenericTable(props) {
     }
 
     return (
-        !props.body ? 
-            false :
-            ((props.body === "loading") ? 
-                (<div className="bufferzone">
-                    <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
-                </div>) : 
-                (<div className="inputtable">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th className="leftrow" scope="col">{props.headerL}</th>
-                                <th className="rightrow" scope="col">{props.headerR}</th>
-                            </tr>
-                        </thead>
-                        {generateRows(props.body)}
-                    </table>
-                </div>)
-            )
+        !props.body ? null : 
+            <div className="inputtable">
+                <table>
+                    <thead>
+                        <tr>
+                            <th className="leftrow" scope="col">{props.headerL}</th>
+                            <th className="rightrow" scope="col">{props.headerR}</th>
+                        </tr>
+                    </thead>
+                    {generateRows(props.body)}
+                </table>
+            </div>
     )
-
-    // if (!props.body) {
-    //     return (
-    //         false
-    //     )
-    // }
-
-    // if (props.body === "loading") {
-    //     return (
-    //         <div className="bufferzone">
-    //             <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
-    //         </div>
-    //     )
-    // }
-
-    // return (
-    //     <div className="inputtable">
-    //         <table>
-    //             <thead>
-    //                 <tr>
-    //                     <th className="leftrow" scope="col">{props.headerL}</th>
-    //                     <th className="rightrow" scope="col">{props.headerR}</th>
-    //                 </tr>
-    //             </thead>
-    //             {generateRows(props.body)}
-    //         </table>
-    //     </div>
-    // )
 }
 
 export default GenericTable

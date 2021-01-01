@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import SelectSearch from "react-select-search"
 import GenericTable from "./GenericTable"
-// import Toggletip from "./Toggletip"
 import "../styles/OptionSelect.css"
 import "../styles/Searchbox.css"
 
@@ -80,6 +79,7 @@ function renderDragon(props, option, snapshot, className) {
 }
 
 function OptionSelect(props) {
+    const [loading, setLoading] = useState(false)
     const [dragon, setDragon] = useState("")
     const [advanced, setAdvanced] = useState(false)
     const [necessary, setNecessary] = useState({
@@ -188,10 +188,7 @@ function OptionSelect(props) {
     const handleSubmit = (evt) => {
         evt.preventDefault()
         
-        setapiResponse({
-            dataTable: "loading",
-            decisionVariables: "loading",
-        })
+        setLoading(true)
         
         const submission = Object.assign({}, necessary)
         submission["dragon"] = dragon
@@ -210,6 +207,8 @@ function OptionSelect(props) {
         })
         .then(response => response.json())
         .then(data => setapiResponse(data))
+        .catch(err => console.error(err))
+        .finally(() => setLoading(false))
     }
 
     return (
@@ -349,7 +348,7 @@ function OptionSelect(props) {
                                 type="submit"
                                 id={`submission${props.id}`}
                                 value="Optimize!" 
-                                disabled={forbidden.includes(dragon)} 
+                                disabled={forbidden.includes(dragon) || loading} 
                             />
                             <label 
                                 htmlFor={`submission${props.id}`}
@@ -752,9 +751,21 @@ function OptionSelect(props) {
                     )}
                 </form>
             </div>
-            <GenericTable headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/>
-            <GenericTable headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
-            {/* <ViableString solveresults={apiResponse.dataTable}/> */}
+
+            {loading ?
+                <>
+                    <div className="bufferzone">
+                        <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
+                    </div>
+                    <div className="bufferzone">
+                        <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
+                    </div>
+                </> :
+                <>
+                    <GenericTable headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/> 
+                    <GenericTable headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
+                </>
+            }
         </>
     )
 }

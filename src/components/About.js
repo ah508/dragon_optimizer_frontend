@@ -645,23 +645,6 @@ function About() {
             handle a more robust system - the code just
             isn't there right now. *wink*
           </p>
-          <h4 className="subheader">"Simulation"</h4>
-          <p>
-            This tool is not a simulator, and should never
-            be treated as one.
-
-            Semantically you can debate that, but in the
-            context of Dragalia Lost "sim" has a very 
-            clear connotation - and I would like to ensure
-            that there is no conflation.
-
-            This tool is more powerful in some respects,
-            and less powerful in many, <i>many</i> others.
-
-            Please be mindful of the limited context
-            provided here - the bulk of the game is not
-            spent in transformation.
-          </p>
           <h4 className="subheader">Output</h4>
           <p>
             The format of output is... not the greatest
@@ -728,6 +711,10 @@ function About() {
               Change the data format to check for buff zones
             </li>
             <li>
+              Add real time limitations as an alternative
+              to dragon time transformations.
+            </li>
+            <li>
               (try to) Implement Thor
             </li>
             <li>
@@ -748,12 +735,23 @@ function About() {
               Make an arbitrary string parser with graphical display.
             </li>
             <li>
+              Fix the early exit buff bug.
+            </li>
+            <li>
               Migrate verifications from the spreadsheet to this site.
             </li>
             <li>
               Integrate use of COIN-OR libraries directly, and drop Python MIP.
             </li>
           </ol>
+        </div>
+      </section>
+      <section className="sectionbody">
+        <h3 className="sectionheader">Contact</h3>
+        <div className="textbody">
+          If you'd like to contribute to the project, or if you
+          have any unanswered questions, you can get
+          in touch with me on discord @Lazy Chunch#1139
         </div>
       </section>
       <div className="emptydiv"></div>

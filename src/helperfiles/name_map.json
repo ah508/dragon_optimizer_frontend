@@ -516,6 +516,17 @@
             "Event Welfare"
         ]
     },
+    "210136_01": {
+        "NameEN": "Gozu Tenno",
+        "NameJP": "ゴズテンノウ",
+        "NameCN": "牛头天王",
+        "Element": 1,
+        "Rarity": 5,
+        "Availability": [
+            "Limited",
+            "Gacha"
+        ]
+    },
     "210025_01": {
         "NameEN": "Poseidon",
         "NameJP": "\u30dd\u30bb\u30a4\u30c9\u30f3",

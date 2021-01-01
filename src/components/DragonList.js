@@ -1,7 +1,6 @@
 import React, {useState} from "react"
 import OptionSelect from "./OptionSelect"
 import "../styles/DragonList.css"
-// import {ReactComponent as Cross} from "../styles/others/cross.svg"
 
 function Cross(props) {
   return (
@@ -12,8 +11,8 @@ function Cross(props) {
       viewBox="0 0 100 100"
       version="1.1" 
       xmlns="http://www.w3.org/2000/svg">
-    <path d="M 10 10 L 90 90" stroke="black" stroke-width="14" />
-    <path d="M 10 90 L 90 10" stroke="black" stroke-width="14" />
+    <path d="M 10 10 L 90 90" stroke="black" strokeWidth="14" />
+    <path d="M 10 90 L 90 10" stroke="black" strokeWidth="14" />
     <circle cx="10" cy="10" r="7" fill="black"/>
     <circle cx="90" cy="90" r="7" fill="black"/>
     <circle cx="90" cy="10" r="7" fill="black"/>
@@ -36,9 +35,6 @@ function DragonList() {
   const getColor = (keynum) => colors[Math.abs(keynum%4)]
 
   function remDragon(drop) {
-    // console.log(drop)
-    // evt.preventDefault()
-    // setDragons(dragons => dragons.slice(0, -1))
     setDragons(dragons => dragons.filter(item => item !== drop))
   }
 

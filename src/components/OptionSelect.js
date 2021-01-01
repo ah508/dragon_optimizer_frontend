@@ -1,12 +1,9 @@
 import React, { useState } from "react"
 import SelectSearch from "react-select-search"
 import GenericTable from "./GenericTable"
-import Toggletip from "./Toggletip"
+// import Toggletip from "./Toggletip"
 import "../styles/OptionSelect.css"
 import "../styles/Searchbox.css"
-
-//for some reason that's probably really obvious, dragon images
-//won't load if I try to path to them in src
 
 function dragonObjects() {
     let dragmapping = require("../helperfiles/name_map.json")
@@ -121,38 +118,6 @@ function OptionSelect(props) {
         "bog": false,
         "bufftime": 0
     })
-    // const [mode, setMode] = useState("effmod")
-    // const [duration, setDuration] = useState(600)
-    // const [speed, setSpeed] = useState(0)
-    // const [skill, setSkill] = useState(1)
-    // const [leniency, setLeniency] = useState(0)
-    // const [baseSTR, setBaseSTR] = useState(100)
-    // const [passiveSTR, setPassiveSTR] = useState(0)
-    // const [activeSTR, setActiveSTR] = useState(0)
-    // const [coabSTR, setCoabSTR] = useState(0)
-    // const [passiveFS, setPassiveFS] = useState(0)
-    // const [activeFS, setActiveFS] = useState(0)
-    // const [coabFS, setCoabFS] = useState(0)
-    // const [passiveSKD, setPassiveSKD] = useState(0)
-    // const [activeSKD, setActiveSKD] = useState(0)
-    // const [coabSKD, setcoabSKD] = useState(0)
-    // const [critC, setCritC] = useState(0)
-    // const [critM, setCritM] = useState(0)
-    // const [afflicPUN, setAfflicPUN] = useState(0)
-    // const [brk, setBRK] = useState(false)
-    // const [brkMOD, setbrkMOD] = useState(0.6)
-    // const [brkPUN, setbrkPUN] = useState(0)
-    // const [baseDEF, setBaseDEF] = useState(10)
-    // const [modDEF, setModDEF] = useState(0)
-    // const [eleRES, setEleRES] = useState(0)
-    // const [eleADV, setEleADV] = useState(1)
-    // const [bufftime, setBufftime] = useState(0)
-    // const [haste, setHaste] = useState(0)
-    // const [dboost, setDboost] = useState(0.2)
-    // const [energized, setEnergized] = useState(false)
-    // const [inspired, setInspired] = useState(false)
-    // const [bog, setBog] = useState(false)
-    // const [relax, setRelax] = useState(false)
     const [apiResponse, setapiResponse] = useState(false)
     const availableDragons = dragonObjects()
     const getImage = mapDragons()
@@ -178,7 +143,7 @@ function OptionSelect(props) {
     }
 
     const swapBool = (evt) => {
-        const {name, value} = evt.target
+        const {name} = evt.target
         setStats(prevStats => ({...prevStats, [name]: !stats[name]}))
     }
 
@@ -193,31 +158,31 @@ function OptionSelect(props) {
         "Barbatos", 
         "Horus",
     ]
-    const fillerAPIStuff = {
-        dataTable: [
-            {id: 'damage', value: 5000},
-            {id: 'realframes', value: 711},
-            {id: 'dragframes', value: 588},
-            {id: 'dps', value: 83.3}
-        ],
-        decisionVariables: [
-            {id: "TransformT", value: 1},
-            {id: "NormalC1a", value: 5},
-            {id: "NormalC1b", value: 5},
-            {id: "NormalC2", value: 5},
-            {id: "Boost1_1_DUMMY_C3", value: 2},
-            {id: "NormalD", value: 3},
-            {id: "NormalS", value: 1},
-            {id: "TransformT", value: 1},
-            {id: "NormalC1a", value: 5},
-            {id: "NormalC1b", value: 5},
-            {id: "NormalC2", value: 5},
-            {id: "NormalC3", value: 2},
-            {id: "NormalD", value: 3},
-            {id: "NormalS", value: 1},
-        ],
-        rules: {}
-    }
+    // const fillerAPIStuff = {
+    //     dataTable: [
+    //         {id: 'damage', value: 5000},
+    //         {id: 'realframes', value: 711},
+    //         {id: 'dragframes', value: 588},
+    //         {id: 'dps', value: 83.3}
+    //     ],
+    //     decisionVariables: [
+    //         {id: "TransformT", value: 1},
+    //         {id: "NormalC1a", value: 5},
+    //         {id: "NormalC1b", value: 5},
+    //         {id: "NormalC2", value: 5},
+    //         {id: "Boost1_1_DUMMY_C3", value: 2},
+    //         {id: "NormalD", value: 3},
+    //         {id: "NormalS", value: 1},
+    //         {id: "TransformT", value: 1},
+    //         {id: "NormalC1a", value: 5},
+    //         {id: "NormalC1b", value: 5},
+    //         {id: "NormalC2", value: 5},
+    //         {id: "NormalC3", value: 2},
+    //         {id: "NormalD", value: 3},
+    //         {id: "NormalS", value: 1},
+    //     ],
+    //     rules: {}
+    // }
     //end testing values
 
     const handleSubmit = (evt) => {
@@ -228,44 +193,6 @@ function OptionSelect(props) {
             decisionVariables: "loading",
         })
         
-        // const stats = {
-        //     "basestr": baseSTR,
-        //     "passivestr": passiveSTR,
-        //     "activestr": activeSTR,
-        //     "coabstr": coabSTR,
-        //     "passivefs": passiveFS,
-        //     "activefs": activeFS,
-        //     "coabfs": coabFS,
-        //     "passiveskd": passiveSKD,
-        //     "activeskd": activeSKD,
-        //     "coabskd": coabSKD,
-        //     "critchance": critC,
-        //     "critmod": critM,
-        //     "afflicpun": afflicPUN,
-        //     "breakmod": brkMOD,
-        //     "breakpun": brkPUN,
-        //     "basedef": baseDEF,
-        //     "defmod": modDEF,
-        //     "eleres": eleRES,
-        //     "eleadv": eleADV,
-        //     "aspd": speed,
-        //     "ahst": haste,
-        //     "dboost": dboost,
-        //     "energized": energized,
-        //     "inspired": inspired,
-        //     "broken": brk,
-        //     "bog": bog,
-        //     "bufftime": bufftime
-        // }
-        // const submission = {
-        //     "dragon": dragon,
-        //     "mode": mode,
-        //     "transform time": duration,
-        //     "skill": skill,
-        //     "leniency": leniency,
-        //     "relax": relax,
-        //     "stats": stats
-        // }
         const submission = Object.assign({}, necessary)
         submission["dragon"] = dragon
         submission["stats"] = Object.assign({}, stats)
@@ -283,8 +210,6 @@ function OptionSelect(props) {
         })
         .then(response => response.json())
         .then(data => setapiResponse(data))
-        // not sure if this is the right way to structure the response
-        // nvm seems to work right
     }
 
     return (
@@ -400,6 +325,7 @@ function OptionSelect(props) {
                                     value={necessary["leniency"]} 
                                     onChange={handleNecessary}
                                     min="0"
+                                    max={necessary["transform time"]}
                                     step="1"
                                     disabled={forbidden.includes(dragon)}
                                 />

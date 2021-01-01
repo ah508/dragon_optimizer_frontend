@@ -29,11 +29,6 @@ function dragonObjects() {
         photo: "../../dragons/210071_01.png"
     },
     {
-        name: "Halloween Mym",
-        value: "Halloween Mym",
-        photo: "../../dragons/210113_01.png"
-    },
-    {
         name: "Gala Mym",
         value: "Gala Mym",
         photo: "../../dragons/210002_02.png"
@@ -42,6 +37,11 @@ function dragonObjects() {
         name: "Gala Super Mym",
         value: "Gala Super Mym",
         photo: "../../dragons/210002_02.png"
+    },
+    {
+        name: "Halloween Mym",
+        value: "Halloween Mym",
+        photo: "../../dragons/210113_01.png"
     })
     return d_map
 }
@@ -755,7 +755,7 @@ function OptionSelect(props) {
             {loading ?
                 <>
                     <div className="bufferzone">
-                        <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
+                    <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
                     </div>
                     <div className="bufferzone">
                         <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />

@@ -244,7 +244,7 @@ function OptionSelect(props) {
                             </div>
                             <div className="form-element">
                                 <label htmlFor={"dtime".concat(props.id)}>
-                                    Transformation Duration
+                                    Dragon Time (frames)
                                 </label>
                                 <input 
                                     name="transform time"
@@ -260,7 +260,7 @@ function OptionSelect(props) {
                             </div>
                             <div className="form-element">
                                 <label htmlFor={"aspd".concat(props.id)}>
-                                    Attack Speed
+                                    Attack Speed (%)
                                 </label>
                                 <input 
                                     name="aspd"
@@ -314,7 +314,7 @@ function OptionSelect(props) {
                             })()}
                             <div className="form-element">
                                 <label htmlFor={"lenience".concat(props.id)}>
-                                    Desired Leniency
+                                    Desired Leniency (frames)
                                 </label>
                                 <input 
                                     name="leniency"
@@ -374,7 +374,7 @@ function OptionSelect(props) {
                                     <label 
                                         htmlFor={"passiveSTR".concat(props.id)}
                                     >
-                                        Passive Strength
+                                        Passive Strength (%)
                                     </label>
                                     <input 
                                         name="passivestr"
@@ -391,7 +391,7 @@ function OptionSelect(props) {
                                     <label 
                                         htmlFor={"activeSTR".concat(props.id)}
                                     >
-                                        Active Strength
+                                        Active Strength (%)
                                     </label>
                                     <input 
                                         name="activestr"
@@ -406,7 +406,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"coabSTR".concat(props.id)}>
-                                        Coability Strength
+                                        Coability Strength (%)
                                     </label>
                                     <input 
                                         name="coabstr"
@@ -423,7 +423,7 @@ function OptionSelect(props) {
                                     <label 
                                         htmlFor={"passiveFS".concat(props.id)}
                                     >
-                                        Passive Force Strike
+                                        Passive Force Strike (%)
                                     </label>
                                     <input
                                         name="passivefs" 
@@ -440,7 +440,7 @@ function OptionSelect(props) {
                                     <label 
                                         htmlFor={"activeFS".concat(props.id)}
                                     >
-                                        Active Force Strike
+                                        Active Force Strike (%)
                                     </label>
                                     <input 
                                         name="activefs"
@@ -455,7 +455,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"coabFS".concat(props.id)}>
-                                        Coability Force Strike
+                                        Coability Force Strike (%)
                                     </label>
                                     <input 
                                         name="coabfs"
@@ -470,7 +470,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"passiveSKD".concat(props.id)}>
-                                        Passive Skill Damage
+                                        Passive Skill Damage (%)
                                     </label>
                                     <input
                                         name="passiveskd" 
@@ -485,7 +485,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"activeSKD".concat(props.id)}>
-                                        Active Skill Damage
+                                        Active Skill Damage (%)
                                     </label>
                                     <input 
                                         name="activeskd"
@@ -500,7 +500,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"coabSKD".concat(props.id)}>
-                                        Coability Skill Damage
+                                        Coability Skill Damage (%)
                                     </label>
                                     <input 
                                         name="coabskd"
@@ -515,7 +515,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"critC".concat(props.id)}>
-                                        Critical Chance
+                                        Critical Chance (%)
                                     </label>
                                     <input 
                                         name="critchance"
@@ -531,7 +531,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"critM".concat(props.id)}>
-                                        Additional Critical Modifier
+                                        Additional Critical Modifier (%)
                                     </label>
                                     <input 
                                         name="critmod"
@@ -546,7 +546,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"afflicPUN".concat(props.id)}>
-                                        Affliction Punisher
+                                        Affliction Punisher (%)
                                     </label>
                                     <input 
                                         name="afflicpun"
@@ -561,7 +561,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"brkMod".concat(props.id)}>
-                                        Break Modifier
+                                        Break Multiplier
                                     </label>
                                     <input 
                                         name="breakmod"
@@ -576,7 +576,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"brkPUN".concat(props.id)}>
-                                        Break Punisher 
+                                        Break Punisher (%)
                                     </label>
                                     <input 
                                         name="breakpun"
@@ -591,7 +591,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"modDEF".concat(props.id)}>
-                                        Defense Debuff
+                                        Defense Debuff (%)
                                     </label>
                                     <input 
                                         name="defmod"
@@ -607,7 +607,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"eleRES".concat(props.id)}>
-                                        Elemental Resistance Debuff
+                                        Elemental Resistance Debuff (%)
                                     </label>
                                     <input 
                                         name="eleres"
@@ -622,7 +622,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"eleADV".concat(props.id)}>
-                                        Elemental Advantage Modifier
+                                        Elemental Advantage Multiplier
                                     </label>
                                     <input 
                                         name="eleadv"
@@ -637,7 +637,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"dboost".concat(props.id)}>
-                                        Bonus Dragon Damage
+                                        Bonus Dragon Damage (%)
                                     </label>
                                     <input 
                                         name="dboost"
@@ -652,7 +652,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"skhst".concat(props.id)}>
-                                        Skill Haste
+                                        Skill Haste (%)
                                     </label>
                                     <input 
                                         name="ahst"
@@ -667,7 +667,7 @@ function OptionSelect(props) {
                                 </div>
                                 <div className="form-element">
                                     <label htmlFor={"bufft".concat(props.id)}>
-                                        Buff Time
+                                        Buff Time (%)
                                     </label>
                                     <input 
                                         name="bufftime"

@@ -225,7 +225,7 @@ function OptionSelect(props) {
                                     value={necessary["transform time"]} 
                                     onChange={handleNecessary}
                                     min="1"
-                                    max="1000000"
+                                    max="12000"
                                     step="1"
                                     disabled={forbidden.includes(dragon)}
                                 />
@@ -241,7 +241,7 @@ function OptionSelect(props) {
                                     value={stats["aspd"]} 
                                     onChange={handleStat}
                                     min="0.00"
-                                    max="10"
+                                    max="5"
                                     step="0.01"
                                     disabled={forbidden.includes(dragon)}
                                 />
@@ -261,7 +261,7 @@ function OptionSelect(props) {
                                                 value={stats["basestr"]} 
                                                 onChange={handleStat}
                                                 min="0"
-                                                max="100000"
+                                                max="10000"
                                                 step="1"
                                                 disabled={forbidden.includes(dragon)}
                                             />
@@ -358,7 +358,7 @@ function OptionSelect(props) {
                                         value={stats["standatk"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -376,7 +376,7 @@ function OptionSelect(props) {
                                         value={stats["passivestr"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -394,7 +394,7 @@ function OptionSelect(props) {
                                         value={stats["activestr"]} 
                                         onChange={handleStat}
                                         min="-0.50"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -428,7 +428,7 @@ function OptionSelect(props) {
                                         value={stats["passivefs"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -446,7 +446,7 @@ function OptionSelect(props) {
                                         value={stats["activefs"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -478,7 +478,7 @@ function OptionSelect(props) {
                                         value={stats["passiveskd"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -494,7 +494,7 @@ function OptionSelect(props) {
                                         value={stats["activeskd"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -542,7 +542,7 @@ function OptionSelect(props) {
                                         value={stats["critmod"]} 
                                         onChange={handleStat}
                                         min="-1.5"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -558,7 +558,7 @@ function OptionSelect(props) {
                                         value={stats["afflicpun"]} 
                                         onChange={handleStat}
                                         min="0.00"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -590,7 +590,7 @@ function OptionSelect(props) {
                                         value={stats["breakpun"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -622,7 +622,7 @@ function OptionSelect(props) {
                                         value={stats["eleres"]} 
                                         onChange={handleStat}
                                         min="-0.99"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -638,7 +638,7 @@ function OptionSelect(props) {
                                         value={stats["eleadv"]} 
                                         onChange={handleStat}
                                         min="0.00"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -654,7 +654,7 @@ function OptionSelect(props) {
                                         value={stats["dboost"]} 
                                         onChange={handleStat}
                                         min="0.00"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                         disabled={forbidden.includes(dragon)}
                                     />
@@ -670,7 +670,7 @@ function OptionSelect(props) {
                                         value={stats["ahst"]} 
                                         onChange={handleStat}
                                         min="0.00"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                     disabled= {forbidden.includes(dragon)}
                                     />
@@ -686,7 +686,7 @@ function OptionSelect(props) {
                                         value={stats["bufftime"]} 
                                         onChange={handleStat}
                                         min="0.00"
-                                        max="10"
+                                        max="5"
                                         step="0.01"
                                     disabled= {forbidden.includes(dragon)}
                                     />

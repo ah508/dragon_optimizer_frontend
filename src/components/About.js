@@ -13,7 +13,7 @@ function About() {
           </p>
           <ol>
             <li>
-              All proper projectiles deal damage
+              All "real" projectiles deal damage
               on the same frame that they spawn
             </li>
             <li>
@@ -35,9 +35,10 @@ function About() {
             </li>
           </ol>
           <p>
-          In reality, these will not necessarily always
-          be accurate - our data may be in error, and not
-          all targets are as forgiving as Roy.
+            In practice these might not always hold.
+
+            Our data could be in error, and frame
+            perfect cancels are hard to get consistent at.
           </p>
         </div>
       </section>
@@ -48,10 +49,9 @@ function About() {
             The aim of this program is to help the user 
             maximize their use of time spent transformed.
 
-            In most cases, this is not particularly difficult
-            to achieve through complete enumeration - however
-            there are a few key features we can use to
-            simplify the problem.
+            In most cases, this can be achieved through 
+            complete enumeration - however we can speed
+            things up by exploiting some key features.
           </p>
           <div className="paddedlist">
             <ul>
@@ -83,8 +83,13 @@ function About() {
                 href="https://en.wikipedia.org/wiki/Knapsack_problem"
                 target="_blank" 
                 rel="noreferrer"
-            >knapsack</a> with a few additional constraints for sequential
+            >knapsack</a> with additional constraints for sequential
             dependence.
+
+            Our decision variables represent the number of times we
+            take each action, and our objective function is a linear 
+            combination of those decision variables and their corresponding
+            values. (generally damage)
           </p>
           <p>
             We choose to solve this as an Integer Linear Program (ILP), 
@@ -92,27 +97,20 @@ function About() {
             target="_blank" rel="noreferrer"
             >Python MIP</a> as an intermediary to COIN-OR CBC and CLP.
           </p>
-          <p>
-            Regrettably, Python MIP introduces a lot of overhead,
-            so it is desirable to get rid of it at some point
-            in favor of making calls to linear programming libraries
-            more directly.
-          </p>
           <h4 className="subheader">Why it works</h4>
           <div className="textbody">
             <p>
-              Since our objective function is linear, we can
-              demonstrate that it is convex (without loss of 
-              generality, it is also concave) which means that
-              a discovered local optimum will also be a global
-              optimum.
+              Since our objective is linear, we can
+              demonstrate that it is a convex function,
+              which means that any discovered local optimum
+              will actually be <i>the</i> global optimum.
 
-              This allows us to utilize highly efficient
+              This means we can utilize highly efficient
               hill climbing or gradient descent algorithms 
               to find an optimal solution to the problem.
 
               In particular, CLP uses the Simplex method, 
-              which is a hill climbing algorithm.
+              which is classed as hill climbing.
             </p>
             <p>
               Unless you specifically request a solution
@@ -121,78 +119,63 @@ function About() {
               
               This means that we aren't just using linear
               programming - CBC uses a branch and cut
-              (or branch and bound, if you so prefer)
               algorithm with the LP relaxation of the 
               integer programming problem as a bound.
 
-              In some sense, this is technically still
-              an enumerative method; but it is highly
-              optimized, and much more sophisticated
-              than naive methods such as complete 
-              enumeration.
+              In some sense this is technically still
+              an enumerative method, but it's much faster
+              than most.
             </p>
           </div>
           <h4 className="subheader">Handling Buffs</h4>
           <div className="textbody">
             <p>
-              The existence of buffs and debuffs introduces
-              a small problem into our program - applying
-              one or both will change the value of other 
-              available actions.
+              Buffs and debuffs introduce a small kink in
+              the hose - the value of other actions may not
+              be independent of the buff or debuff.
 
-              Linear programming is great, but you can't
-              really apply it when your function isn't linear.
-
-              Fortunately, we can fix this.
+              This means our function isn't linear, and hence
+              we can't apply linear programming... or can we?
             </p>
             <p>
               You may notice that, while buffed, we
-              still have a linear function, it's just 
-              not the <i>same</i> linear function.
+              still have a linear function... it just 
+              isn't the <i>same</i> linear function.
 
-              We can actually separate our nonlinear
-              function into these two linear functions.
-
-              Furthermore, for our purposes this ends up
-              being repeatable - the function can be
-              decomposed into some combination of 
-              functions corresponding to all possible
-              states of being buffed.
+              We can, in fact, decompose our nonlinear
+              function into two or more linear functions, 
+              where each linear function corresponds to
+              one possible "state" of being buffed.
 
               We need to add a few additional dummy
               variables in order to account for how
-              states can be entered/exited, which does
-              increase the complexity slightly.
-
-              Classifying the objective funtion by these 
-              "buff states" completely solves the problem
-              introduced by buffs, but it is not without
-              its faults.
+              "buff states" can be entered/exited, but
+              this almost completely solves the 
+              nonlinearity introduced by buffs... <i>almost</i>.
             </p>
           </div>
-          <h4 className="subheader">A Note on Arbitrary Complexity</h4>
+          <h4 className="subheader">Arbitrary Complexity</h4>
           <div className="textbody">
             <p>
               If buffs can be reasonably accounted for 
               through buff states, why don't we permit
-              timed buffs and debuffs to be sent in
-              requests to the server?
+              input of timed buffs and debuffs?
             </p>
             <p>
-              The issue is that as a function of the
-              number of buffs, the number of buff states
-              grows <i>fast</i>. 
+              Well... as a function of the number of buffs,
+              the number of buff states grows pretty darn fast. 
               
-              You can approximate the first few terms 
-              by an exponential of base 3.
+              (you can approximate the first few terms 
+              by an exponential of base 3)
               
               This starts to become a problem for the 
-              human trying to read the output around 4
+              human trying to read the output at around 4
               or 5 buffs, and starts to become a problem
-              for the program itself around 14 or 15 buffs.
+              for the program itself at 14 or 15.
               
-              Because of this, it is highly undesirable to
-              permit input of arbitrary timed buffs.
+              Due to a strong instinctual desire to not 
+              have my stuff break, I am thus averse to
+              permitting the entry of user defined buffs.
 
               This is also why Giovanni is disabled for
               the forseeable future.
@@ -203,17 +186,30 @@ function About() {
       <section className="sectionbody">
         <h3 className="sectionheader">How the Problem is Formatted</h3>
         <div className="textbody">
+          <p>
+            For this section, I'm going to assume that you have some
+            understanding of how a linear programming problem is 
+            formulated.
+          </p>
           <h4 className="subheader">States</h4>
           <div className="textbody">
             <p>
               At the topmost layer, the problem is divided
               by "state."<br />
 
-              State encompasses all bonuses or modifiers
-              that you possess at a particular point in
-              time - in each state you can take similar
-              actions, but the value of that action
-              may differ between states.
+              State categorizes decision variables based
+              on possible combinations of buffs and debuffs;
+              it's an additional level of abstraction that 
+              makes things easier for us humans to understand.
+            </p>
+            <p>
+              In each state you can take similar
+              actions, but the value of a particular 
+              action may differ from state to state. For example:
+              "Unbuffed_C1" and "Buffed_C1" are two 
+              different decision variables representing a 
+              single action, "C1,"" that can be taken in 
+              two different states, "Unbuffed" and "Buffed." 
             </p>
           </div>
           <h4 className="subheader">Variables</h4>
@@ -277,7 +273,7 @@ function About() {
             </p>
             <p>
               <u>Sequential dependence constraints</u> are those
-              that ensure a proper ordering can be constructed
+              that ensure a valid ordering can be constructed
               post-solve.
               
               A common constraint of this type might dictate
@@ -457,10 +453,10 @@ function About() {
               add an additional <i>optimality constraint</i> of
               the form:
               <span className="formula">
-                Σ d<sub>i</sub>x<sub>i</sub> = K
+                Σ Σ d<sub>ij</sub>x<sub>ij</sub> = K
               </span>
-              where d<sub>i</sub> is the damage produced
-              by action i, x<sub>i</sub> is the corresponding
+              where d<sub>ij</sub> is the damage produced
+              by action j in state i, x<sub>ij</sub> is the corresponding
               decision variable, and K is the optimal value
               of the objective function from the previous solve.<br />
               We adjust the model as follows:
@@ -574,10 +570,9 @@ function About() {
             of output the results can be made human-readable.
 
             A compromise like this would require more
-            groundwork before it could be considered -
-            the program in its current state isn't fit
-            to handle the pure dynamic generation of
-            constraints that this would require.
+            groundwork - the program in its current state 
+            isn't fit to handle pure dynamic generation of
+            constraints.
           </p>
           <h4 className="subheader">Projectiles</h4>
           <p>
@@ -585,55 +580,42 @@ function About() {
             projectiles and how they behave in-game may,
             in theory, generate some suboptimal solutions.
 
-            Unfortunately, I do not believe this limitation 
-            can be overcome with this solution strategy.
+            Unfortunately, to my knowledge, this limitation 
+            cannot be overcome with this solution strategy.
 
-            Enumerative methods would be able to model this 
-            behavior more accurately, but the sacrifice of 
-            speed isn't something I'm willing to entertain.
+            More exhaustive enumerative methods would be able 
+            to model this behavior more accurately, but the 
+            sacrifice of speed is too great a cost.
           </p>
           <h4 className="subheader">Framedata</h4>
           <p>
-            It is entirely possible that the data we've
-            gathered for some dragons is in error.
+            All framedata is gathered manually.
 
-            This could also result in the generation of
-            suboptimal solutions.
+            This means that it may be subject to 
+            observational errors, environmental errors,
+            and outright mistakes, which can then be
+            inherited by the model.
 
-            This could also be overcome, with a great 
-            deal of additional data collection.
-
-            Personally, that's not something I'm willing
-            to do.
-
-            Most of the people who I've asked to gather
-            data are also disinclined to do this.
+            To some extent, this could be overcome 
+            with a little bit of statistics, and 
+            a lot of extra data collection...
 
             Data collection is tedious, unglamorous,
-            and unlikely to change a great deal.
+            and likely won't be automated any time soon.
 
-            Understandably, <i>nobody</i> wants to do it.
-
-            The most promising approach would be obtaining
-            frames through... alternative means... but most
-            forays related to that have met dead ends.
-
-            Chu suspects it may have something to do with
-            the engine instead of the game.
-          </p>
-          <p>
-            In any case - accuracy of framedata has always
-            been and will likely continue to be the biggest
-            thorn in the side of this project.
+            Understandably, <i>nobody</i> wants to do it,
+            so accurate framedata will probably continue
+            to be the biggest thorn in the side of this 
+            project.
           </p>
           <h4 className="subheader">Accurate Afflictions</h4>
           <p>
-            Right now, all affliction punishers are lumped
-            together under the same binary banner.
+            All affliction punishers are currently lumped
+            under the same binary banner.
 
             "You have 'em or you don't."
 
-            This means that disjointed punishers, or
+            This means that disjoint punishers, or
             punishers that only activate on dragon
             skill can't be modeled.
 
@@ -643,7 +625,7 @@ function About() {
           <p>
             Our chosen solution method can actually
             handle a more robust system - the code just
-            isn't there right now. *wink*
+            isn't there right now.
           </p>
           <h4 className="subheader">Output</h4>
           <p>
@@ -651,8 +633,8 @@ function About() {
             at the moment.
 
             I wanted to make and implement a generator
-            for valid strings, but I legit just don't have
-            the time right now.
+            for valid strings, but I legitimately don't 
+            have time right now.
 
             It might require a few changes to the API,
             but output can totally be streamlined and 
@@ -669,7 +651,7 @@ function About() {
             <ol>
               <li>
                 The system is not built around
-                disjointed buff timings.
+                disjoint buff timings.
               </li>
               <li>
                 The system is not built with
@@ -681,14 +663,18 @@ function About() {
                 crits are weighted and 
                 there is not yet any 
                 support for randomized buffs.
-                (actually this is relevant 
-                for Shishimai.)
               </li>
               <li>
                 Most of the formulation
                 is still done manually,
                 and hence may be prone to
                 errors.
+              </li>
+              <li>
+                Excessively large or small 
+                numbers can break things, even
+                though <i>in theory</i> they 
+                shouldn't.
               </li>
               <li>
                 Python can be kinda slow
@@ -744,14 +730,6 @@ function About() {
               Integrate use of COIN-OR libraries directly, and drop Python MIP.
             </li>
           </ol>
-        </div>
-      </section>
-      <section className="sectionbody">
-        <h3 className="sectionheader">Contact</h3>
-        <div className="textbody">
-          If you'd like to contribute to the project, or if you
-          have any unanswered questions, you can get
-          in touch with me on discord @Lazy Chunch#1139
         </div>
       </section>
       <div className="emptydiv"></div>

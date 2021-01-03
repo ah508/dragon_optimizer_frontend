@@ -5,6 +5,17 @@ function FAQ() {
   return (
     <article className="backdrop">
       <section className="topbill">
+        <h3 className="sectionheader">Why does the input only go to five?</h3>
+        <div className="textbody">
+          <p>
+            That's 5.00 - which is 500%.
+            
+            Things can break if you allow arbitrarily high input, so 
+            it's capped at value arbitrarily deemed "high enough."
+          </p>
+        </div>
+      </section>
+      <section className="sectionbody">
         <h3 className="sectionheader">Why can't I use [insert dragon here]?</h3>
         <div className="textbody">
           <p>
@@ -39,6 +50,35 @@ function FAQ() {
         </div>
       </section>
       <section className="sectionbody">
+        <h3 className="sectionheader">Why am I getting "INFEASIBLE" solutions?</h3>
+        <div className="textbody">
+          <p>
+            You either put all of the inputs to the extreme, or figured
+            out a better way to break something. If you @ me, I can check
+            the logs.
+          </p>
+        </div>
+      </section>
+      <section className="sectionbody">
+        <h3 className="sectionheader">I don't see any actions and my results are all zero?</h3>
+        <div className="textbody">
+          <p>
+            Your damage is zero and the optimal course of action is
+            to do nothing.
+          </p>
+        </div>
+      </section>
+      <section className="sectionbody">
+        <h3 className="sectionheader">Output just blips and disappears?</h3>
+        <div className="textbody">
+          <p>
+            Congrats! You broke something I didn't expect!<br/>
+
+            Please let me know what you did to achieve this.
+          </p>
+        </div>
+      </section>
+      <section className="sectionbody">
         <h3 className="sectionheader">Why can't I use Giovanni?</h3>
         <div className="textbody">
           <p>
@@ -62,14 +102,10 @@ function FAQ() {
         <h3 className="sectionheader">Why can't I use Shishimai?</h3>
         <div className="textbody">
           <p>
-            He's very awkward to fit in, but nothing about him is 
-            particularly difficult to model.
-
-            It's just that the current program isn't built to handle
-            probabilistic buffs, and I don't want to hack it to make
-            him work.
-
             He'll be supported eventually, just not right now.
+
+            He's very awkward to fit in, but not particularly difficult
+            to model.
           </p>
         </div>
       </section>
@@ -81,8 +117,8 @@ function FAQ() {
             
             Or at least I don't plan to right now. 
             
-            Potentially arbitrary skill usage is really hard
-            to reconcile with how the problem gets formulated.
+            Potentially arbitrary skill usage is not pleasant to
+            try and reconcile mathematically.
           </p>
         </div>
       </section>
@@ -94,7 +130,7 @@ function FAQ() {
             and Cat Sith respectively, there is nothing to differentiate
             these shapeshifts from using Mars/Cat Sith normally.
 
-            So to avoid redundancy, they're being ignored for now.
+            So to avoid redundancy, they're being ignored.
           </p>
         </div>
       </section>
@@ -110,14 +146,9 @@ function FAQ() {
         <h3 className="sectionheader">How do you account for boosted dragon time?</h3>
         <div className="textbody">
           <p>
-            We don't... at the moment.
+            We don't.
 
-            Personally, I would prefer to keep that as direct as possible -
-            "give frames, get results to match", instead of getting a
-            result that takes <i>more</i> frames than specified.
-
-            Unless someone poses a really good argument about this, I have
-            no intention to change it.
+            The time you enter is the time that's used.
           </p>
         </div>
       </section>
@@ -128,11 +159,10 @@ function FAQ() {
             Great question!
           </p>
           <p>
-            Unfortunately, the answer is kinda technical and 
-            long-winded.
+            The answer is kinda technical and long-winded.
 
-            If you're really interested in knowing the answer to that,
-            check out the "About" section on buffs.
+            If you're really interested in knowing,
+            check the "About" section on buffs.
           </p>
         </div>
       </section>
@@ -159,14 +189,11 @@ function FAQ() {
             Great question.
           </p>
           <p>
-            A more serious answer is that we can only maintain
-            this degree of accuracy because of how limited the
-            problem is.
+            Unlike most optimization problems related to this game,
+            this one can actually be solved. (most of the time, anyway...)
 
-            The accuracy with which we can model this process also
-            made this interesting to pursue for academic purposes -
-            we know that the behavior can be completely characterized,
-            so why not make an effort to do that?
+            It's interesting because it's possible, and the limitations
+            are what make it so.
           </p>
         </div>
       </section>

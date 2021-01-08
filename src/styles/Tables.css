@@ -1,13 +1,9 @@
 .inputtable {
-    margin: 4px;
-    border-radius: 5px;
     table-layout: fixed;
     border-collapse: collapse;
-    position: relative;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
     font-size: large;
+    width: max-content;
     min-width: 150px;
-    background-color: beige;
     overflow-y: scroll;
 }
 

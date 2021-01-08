@@ -5,12 +5,7 @@ ul {
 }
 
 .inputbucket {
-    margin: 4px;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
     padding-bottom: 4px;
-    position: relative;
-    background-color: beige;
     overflow: visible;
 }
 
@@ -198,30 +193,4 @@ input[type=number] {
     z-index: 1;
     height: 64px;
     width: 64px;
-}
-
-.bufferzone {
-    margin: 4px;
-    border-radius: 5px;
-    display: flex;
-    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-    position: relative;
-    min-width: 150px;
-    background-color: beige; 
-}
-
-.bufferimage {
-    display: block;
-    margin: auto;
-    height: 64px;
-    width: 64px;
-    animation: fadeTwice 1s infinite alternate;
-    -webkit-animation: fadeTwice 1s infinite alternate;
-    -moz-animation: fadeTwice 1s infinite alternate;
-    -o-animation: fadeTwice 1s infinite alternate;
-}
-
-@keyframes fadeTwice {
-    from {opacity: 80%;}
-    to {opacity: 40%;}
 }

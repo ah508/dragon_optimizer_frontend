@@ -282,11 +282,11 @@ function About() {
 
               In other words:
               <span className="formula">
-                C2 ≤ C1
+                C2 &le; C1
               </span>
               <span className="formula">or</span>
               <span className="formula">
-                C2 - C1 ≤ 0
+                C2 - C1 &le; 0
               </span>
 
               For problems involving buff states, this can also
@@ -296,7 +296,7 @@ function About() {
               For the prior example, if a buff state were
               involved, the constraint would instead read:
               <span className="formula">
-                C2 - C1 - BC1 ≤ 0
+                C2 - C1 - BC1 &le; 0
               </span>
               where "BC1" is a dummy variable indicating 
               that the last action you took while buffed
@@ -318,7 +318,7 @@ function About() {
               
               More concisely:
               <span className="formula">
-                C1 - W - D - S ≤ 1
+                C1 - W - D - S &le; 1
               </span>
             </p>
             <p>
@@ -328,11 +328,11 @@ function About() {
               Most commonly, these dictate that you cannot
               use a skill more than once
               <span className="formula">
-                S ≤ 1
+                S &le; 1
               </span>
               or that you cannot exit a state more than once
               <span className="formula">
-                BC1 + BC2 + BC3 ≤ 1
+                BC1 + BC2 + BC3 &le; 1
               </span>
             </p>
             <p>
@@ -342,7 +342,7 @@ function About() {
 
               Constraints of this type follow the form of:
               <span className="formula">
-                Σ c<sub>i</sub>x<sub>i</sub> ≤ t
+                &Sigma; c<sub>i</sub>x<sub>i</sub> &le; t
               </span>
               where c<sub>i</sub> is the cost (time)
               of action i, x<sub>i</sub> is the decision
@@ -368,7 +368,7 @@ function About() {
 
               Constraints of this type follow the form of:
               <span className="formula">
-                c<sub>s</sub>x<sub>s</sub> - Σ a<sub>i</sub>x<sub>i</sub> ≤ 0
+                c<sub>s</sub>x<sub>s</sub> - &Sigma; a<sub>i</sub>x<sub>i</sub> &le; 0
               </span>
               where c<sub>s</sub> is the SP cost of action S,
               x<sub>s</sub> is the decision variable associated
@@ -453,7 +453,7 @@ function About() {
               add an additional <i>optimality constraint</i> of
               the form:
               <span className="formula">
-                Σ Σ d<sub>ij</sub>x<sub>ij</sub> = K
+                &Sigma; &Sigma; d<sub>ij</sub>x<sub>ij</sub> = K
               </span>
               where d<sub>ij</sub> is the damage produced
               by action j in state i, x<sub>ij</sub> is the corresponding
@@ -517,7 +517,7 @@ function About() {
               We must also modify sequential dependence constraints
               like so:
               <span className="formula">
-                C<sub>i</sub> + C<sub>ia</sub> - C<sub>i-1</sub> ≤ 0
+                C<sub>i</sub> + C<sub>ia</sub> - C<sub>i-1</sub> &le; 0
               </span>
               Where C<sub>i</sub> is the move in question,
               C<sub>ia</sub> is the alternate execution, and 

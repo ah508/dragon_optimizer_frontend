@@ -13,16 +13,18 @@ a:visited {
 
 .blackbox {
   display: block;
-  width: 100%;
   z-index: -1;
   height: 47px;
   top: 0px;
   left: 0px;
-  position: absolute;
+  right: 0px;
+  position: fixed;
   background-color: white;
 }
 
 .parent {
+  width: 100%;
+  min-width: fit-content;
   font-family: 'Noto Sans', sans-serif;
 }
 
@@ -60,9 +62,3 @@ a:visited {
   left: 0;
   z-index: 1;
 }
-
-/* ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  background: transparent;
-} */

@@ -1,0 +1,14 @@
+.genbox {
+    margin: 4px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    background-color: beige;
+}
+
+.scuff {
+    padding: 4px;
+    width: max-content;
+    min-width: 150px;
+    max-width: 300px;
+}

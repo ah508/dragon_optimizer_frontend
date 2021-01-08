@@ -40,7 +40,6 @@ function DragonList() {
 
   return (
     <div className="draglist">
-      {console.log(dragons)}
       {dragons.map(dragon => {
         const divHeight = {zIndex: 999-dragon};
         return (

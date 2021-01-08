@@ -1,8 +1,11 @@
 import React, { useState } from "react"
 import SelectSearch from "react-select-search"
+import BufferZone from "./BufferZone"
 import GenericTable from "./GenericTable"
+import ParseString from "./ParseString"
 import "../styles/OptionSelect.css"
 import "../styles/Searchbox.css"
+import "../styles/generic.css"
 
 function dragonObjects() {
     let dragmapping = require("../helperfiles/name_map.json")
@@ -77,6 +80,8 @@ function renderDragon(props, option, snapshot, className) {
         </button>
     );
 }
+
+
 
 function OptionSelect(props) {
     const [loading, setLoading] = useState(false)
@@ -184,7 +189,7 @@ function OptionSelect(props) {
 
     return (
         <>
-            <div className="inputbucket">
+            <div className="inputbucket genbox">
                 <img className="dragonphoto" src={getImage[dragon]} alt="" />
                 <SelectSearch
                     id={"dragonSelect".concat(props.id)}
@@ -765,17 +770,16 @@ function OptionSelect(props) {
 
             {loading ?
                 <>
-                    <div className="bufferzone">
-                    <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
-                    </div>
-                    <div className="bufferzone">
-                        <img className="bufferimage" src="../../dragons/blank_drag.png" alt="loading placeholder" />
-                    </div>
-                </> :
-                <>
-                    <GenericTable headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/> 
-                    <GenericTable headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
-                </>
+                    <BufferZone />
+                    <BufferZone />
+                    <BufferZone />
+                </> : apiResponse ?
+                    <>
+                        <GenericTable headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/> 
+                        <GenericTable headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
+                        <ParseString body={apiResponse.decisionVariables} rules={apiResponse.rules} />
+                    </> :
+                    null
             }
         </>
     )

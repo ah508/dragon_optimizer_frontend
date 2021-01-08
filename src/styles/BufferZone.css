@@ -1,0 +1,20 @@
+.bufferzone {
+    display: flex;
+    min-width: 150px;
+}
+
+.bufferimage {
+    display: block;
+    margin: auto;
+    height: 64px;
+    width: 64px;
+    animation: fadeTwice 1s infinite alternate;
+    -webkit-animation: fadeTwice 1s infinite alternate;
+    -moz-animation: fadeTwice 1s infinite alternate;
+    -o-animation: fadeTwice 1s infinite alternate;
+}
+
+@keyframes fadeTwice {
+    from {opacity: 80%;}
+    to {opacity: 40%;}
+}

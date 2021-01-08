@@ -28,14 +28,8 @@ function Home() {
           of actions that can be used to construct a valid attack string.
         </p>
         <p>
-          You might find the output a little confusing - at some point
-          I hope to include a program that will generate a valid ordering
-          for you, but I haven't yet had time to work on it.
-
-          Actions are prefixed by the "state" that they take place in,
-          which can result in a little bit of output gore.
-
-          This is... not ideal, but I'm trying to work with what I've got.
+          The app will attempt to construct a valid string for you, but 
+          it's still a little buggy so don't count on it all the time.
 
           Please note that the initial conditions are assumed to persist for 
           <strong> the entire duration</strong> of the transformation - this 

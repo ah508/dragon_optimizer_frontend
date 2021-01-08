@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react"
-import worker_script from "./workerparse"
+// eslint-disable-next-line
+import myWorker from "worker-loader!../helperfiles/parseworker"
 import BufferZone from "./BufferZone"
 import "../styles/Tables.css"
 import "../styles/generic.css"
@@ -12,12 +13,12 @@ function ParseString(props) {
 
   useEffect(() => {
     console.log('instantiating worker')
-    var worker = new Worker(worker_script)
-    worker.onmessage = e => {
+    var worker = new myWorker()
+    worker.addEventListener("message", e => {
       setStatus('')
       console.log(e.data)
       setWorkResponse(e.data.value)
-    }
+    })
 
     const body = quickInfo(props.body)
     if (sum(Object.values(body)) > 40) {

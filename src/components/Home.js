@@ -9,11 +9,14 @@ function Home() {
           Welcome to the Dragalia Lost dragon optimization project.
         </p>
         <p>
-          This is a tool to maximize the effectiveness of a given
-          transformation.
+          This is a very old tool that was never really widely available;
+          hopefully that can change soon.
 
-          Right now it's a little rough around the edges, but still
-          totally functional.
+          It's designed to help you maximize the use of your time spent
+          transformed.
+          
+          The implementation is still a bit rough around the
+          edges, but at least it's functional again.
         </p>
       </section>
       <section className="sectionbody">
@@ -25,40 +28,31 @@ function Home() {
           and the like), and hit "Optimize!" to get your solution.
           
           The optimal result will be returned as an unordered set 
-          of actions that can be used to construct a valid attack string.
+          of actions - the app will attempt to construct a valid
+          string from these, but may not always succeed.
         </p>
         <p>
-          The app will attempt to construct a valid string for you, but 
-          it's still a little buggy so don't count on it all the time.
-
           Please note that the initial conditions are assumed to persist for 
           <strong> the entire duration</strong> of the transformation - this 
-          is an unfortunate limitation of the current system.
+          is a limitation of the current system that won't go away any time soon.
         </p>
       </section>
       <section className="sectionbody">
         <p>
-          If you want to know how and why this works, check
-          out the "About" page. 
-          
-          There, you'll also find the assumptions that make this 
-          possible, and the limitations that result from them.
-          
-          Some of these limitaions can be improved upon - maybe 
-          you could be the one to do it - this project
-          does have an open source.
+          If you want to know more of the technical details on 
+          how this works, check the "about" section.
+        </p>
+        <p>
+          If you have any questions that aren't answered in FAQ, 
+          or if you'd like to contribute to the project,
+          you can contact me on discord @Lazy Chunch#1139.
         </p>
       </section>
-      <section className="sectionbody">
-          If you'd like to contribute to the project, or if you
-          have any unanswered questions, you can get
-          in touch with me on discord @Lazy Chunch#1139
-        </section>
       <section className="sectionbody">
         <h4>Special thanks to:</h4>
         <p>
           Nyara and Chu for early support, resources, and a ton of data collection;
-          Qwe and Hank for UI and refactoring recommendations;
+          Qwe, Hank, and Zannett for UI and refactoring recommendations;
           Alex for extensive testing, 
           and anyone who provided frames or footage for data collection.
         </p>

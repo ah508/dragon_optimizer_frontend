@@ -15,14 +15,15 @@ a:visited {
   display: block;
   z-index: -1;
   height: 47px;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  position: fixed;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  position: absolute;
   background-color: white;
 }
 
 .parent {
+  position: relative;
   width: 100%;
   min-width: fit-content;
   font-family: 'Noto Sans', sans-serif;

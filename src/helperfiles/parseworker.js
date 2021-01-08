@@ -15,7 +15,7 @@ const decrement = (base, key) => {
 function formatReduction(sol) {
     let whole = [],
         frag = []
-    const nline = new Set(['T', 'W', 'D', 'S', 'Buff end'])
+    const nline = new Set(['T', 'W', 'D', 'S', 'S0', 'S1', 'S2', 'S3', 'buff_end'])
     for (const move of sol) {
         frag.push(move)
         if (nline.has(move)) {
@@ -95,11 +95,3 @@ const on_message = function(e) {
 }
 
 self.addEventListener("message", on_message) // eslint-disable-line no-restricted-globals
-
-// let code = workercode.toString();
-// code = code.substring(code.indexOf("{")+1, code.lastIndexOf("}"));
-
-// const blob = new Blob([code], {type: "application/javascript"});
-// const worker_script = URL.createObjectURL(blob);
-
-// export default worker_script;

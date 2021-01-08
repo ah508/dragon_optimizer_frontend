@@ -173,7 +173,9 @@ function OptionSelect(props) {
         const submission = Object.assign({}, necessary)
         submission["dragon"] = dragon
         submission["stats"] = Object.assign({}, stats)
-    
+        
+        // hey you found the endpoint.
+        // if you want to use it, please ask first.
         fetch('https://dldragonopt.app/api/optimize', {
             method: 'POST',
             headers: {

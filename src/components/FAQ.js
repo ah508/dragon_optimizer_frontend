@@ -5,6 +5,82 @@ function FAQ() {
   return (
     <article className="backdrop">
       <section className="topbill">
+        <h3 className="sectionheader">How do I read the output?</h3>
+        <div className="textbody">
+          <p>
+            Which output?
+          </p>
+          <h4 className="subheader">Actions</h4>
+          <p>
+            This contains an unordered set of actions 
+            that will maximize your damage dealt.
+
+            Actions are prefixed by state, which is an
+            abstraction that adds a bit more order on
+            the backend.
+
+            Suggested String will attempt to parse this 
+            into something more readable, and for many 
+            of you that's probably a better place to start.
+          </p>
+          <h4 className="subheader">Results</h4>
+          <p>
+            These are the results from the solve.
+          </p>
+          <p>
+            Max Damage and DPS can be either a percent modifier,
+            or a straight damage value depending on what options
+            you ran with (remember to multiply by 100 if it's a 
+            modifier).
+          </p>
+          <p>
+            Real Time is the amount of actual time (in frames)
+            that you spent transformed.
+            
+            Dragon Time is the amount of dragon time (in frames)
+            consumed by your actions.
+
+            These two stats will differ, because transforming
+            and using skill don't use any dragon time.
+          </p>
+          <h4 className="subheader">Suggested String</h4>
+          <p>
+            This generates one possible ordering of actions, stripping
+            states away for ease of viewing.
+
+            Actions are listed in combo notation - "C" followed
+            by the number of taps needed for execution.
+
+            If an action has multiple <i>distinct</i> hits, the
+            number will additionally be followed by a lowercase
+            letter denoting which hits are referenced. For example:
+          </p>
+          <p>
+            There are also some oddballs:
+          </p>
+          <ul>
+            <li>
+              T - "Transformation"
+            </li>
+            <li>
+              D - "Dodge"
+            </li>
+            <li>
+              S - "Skill"
+            </li>
+            <li>
+              W - "Wait" (keep tapping instead of dodging)
+            </li>
+            <li>
+              buff_end - a buff just expired (still a bit buggy)
+            </li>
+            <li>
+              BD - "Backdash" (not currently implemented)
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section className="sectionbody">
         <h3 className="sectionheader">Why does the input only go to five?</h3>
         <div className="textbody">
           <p>
@@ -13,40 +89,6 @@ function FAQ() {
             Things can break if you allow arbitrarily high input, so 
             it's capped at value arbitrarily deemed "high enough."
           </p>
-        </div>
-      </section>
-      <section className="sectionbody">
-        <h3 className="sectionheader">Why can't I use [insert dragon here]?</h3>
-        <div className="textbody">
-          <p>
-            This could be for any number of reasons.
-          </p>
-          <ol>
-            <li>
-              Some dragons do not yet have empirically verified
-              framedata.
-              
-              At the time of writing, this includes:
-              <ul>
-                <li>Mini Hildy</li>
-                <li>Mini Zodi</li>
-                <li>Barbatos</li>
-                <li>Horus</li>
-              </ul>
-            </li>
-            <li>
-              Some dragons might not be implemented yet, or
-              may be intractable.
-              See: Giovanni, Thor, and Shishimai
-            </li>
-            <li>
-              The dragon may be new, and may not yet have data.
-            </li>
-            <li>
-              Maybe I goofed and accidentally forbid something
-              that was fine.
-            </li>
-          </ol>
         </div>
       </section>
       <section className="sectionbody">
@@ -79,59 +121,54 @@ function FAQ() {
         </div>
       </section>
       <section className="sectionbody">
-        <h3 className="sectionheader">Why can't I use Giovanni?</h3>
+        <h3 className="sectionheader">Why can't I use [insert dragon here]?</h3>
         <div className="textbody">
           <p>
-            Giovanni is really hard to model accurately. <br />
-            See also: the "About" section on buffs
+            This could be for any number of reasons.
           </p>
-        </div>
-      </section>
-      <section className="sectionbody">
-        <h3 className="sectionheader">Why can't I use Thor?</h3>
-        <div className="textbody">
-          <p>
-            Thor's string is hard to model.
+          <ol>
+            <li>
+              Some dragons do not yet have empirically verified
+              framedata.
+              
+              At the time of writing, this includes:
+              <ul>
+                <li>Mini Hildy</li>
+                <li>Mini Zodi</li>
+                <li>Barbatos</li>
+                <li>Horus</li>
+              </ul>
+            </li>
+            <li>
+              Some dragons might not be implemented yet.
+              
+              Thor and Shishimai are not totally unsolvable,
+              but I have not yet had time to work on them.
+            </li>
+            <li>
+              Some other dragons may actually be completely
+              intractable, and can't be added for some reason
+              or another.
 
-            Not Giovanni hard, I just don't have the time to
-            sit down and work it out right now.
-          </p>
-        </div>
-      </section>
-      <section className="sectionbody">
-        <h3 className="sectionheader">Why can't I use Shishimai?</h3>
-        <div className="textbody">
-          <p>
-            He'll be supported eventually, just not right now.
+              Right now this just includes Giovanni, Tiki, 
+              and Dragondrive users.
+            </li>
+            <li>
+              Some dragons don't actually exist.
 
-            He's very awkward to fit in, but not particularly difficult
-            to model.
-          </p>
-        </div>
-      </section>
-      <section className="sectionbody">
-        <h3 className="sectionheader">Will you add Tiki/Dragondrive?</h3>
-        <div className="textbody">
-          <p>
-            No. 
-            
-            Or at least I don't plan to right now. 
-            
-            Potentially arbitrary skill usage is not pleasant to
-            try and reconcile mathematically.
-          </p>
-        </div>
-      </section>
-      <section className="sectionbody">
-        <h3 className="sectionheader">What about Leonidas/Chelle?</h3>
-        <div className="textbody">
-          <p>
-            While Leonidas and Chelle can only transform into Mars 
-            and Cat Sith respectively, there is nothing to differentiate
-            these shapeshifts from using Mars/Cat Sith normally.
-
-            So to avoid redundancy, they're being ignored.
-          </p>
+              Leonidas and Chelle, for instance, have
+              "unique" transformations that are completely
+              indistinguishable from the normal usage of 
+              Mars and Cat S&igrave;th.
+            </li>
+            <li>
+              The dragon may be new, and may not yet have data.
+            </li>
+            <li>
+              Maybe I goofed and accidentally forbid something
+              that was fine.
+            </li>
+          </ol>
         </div>
       </section>
       <section className="sectionbody">
@@ -139,6 +176,10 @@ function FAQ() {
         <div className="textbody">
           <p>
             Don't ask questions you don't want to know the answers to.
+            <br /><br /><br />
+            It's really just light future proofing; I would
+            prefer to not be caught off-guard by something that
+            easy to implement.
           </p>
         </div>
       </section>
@@ -149,6 +190,8 @@ function FAQ() {
             We don't.
 
             The time you enter is the time that's used.
+
+            Nimis is an exception; his skill costs negative frames.
           </p>
         </div>
       </section>

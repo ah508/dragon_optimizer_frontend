@@ -507,26 +507,13 @@ function About() {
               <u>"Bufferables"</u> like Leviathan, Pele, and High
               Brunhilda all have actions that cannot be immediately
               canceled by a dodge - though they can be canceled
-              immediately by a skill.
+              immediately by a skill, and may be cut short abruptly
+              by the end of transformation.
 
               This results in two different timings for the same
-              action, so we need to add a decision variable to 
-              represent this alternate execution, and to constrain
-              it by the number of skill uses.
-
-              We must also modify sequential dependence constraints
-              like so:
-              <span className="formula">
-                C<sub>i</sub> + C<sub>ia</sub> - C<sub>i-1</sub> &le; 0
-              </span>
-              Where C<sub>i</sub> is the move in question,
-              C<sub>ia</sub> is the alternate execution, and 
-              C<sub>i-1</sub> is the preceding action.
-
-              Do note that we do <i>not</i> modify constraints where
-              the move in question is the preceding action, since
-              the alternate execution can only be followed up by a
-              skill.
+              action, with two different circumstances that can lead
+              to that timing, so we need to add decision variables to 
+              represent these alternate possibilities.
             </p>
             <p>
               <u>Styx</u> has multiple different levels for his

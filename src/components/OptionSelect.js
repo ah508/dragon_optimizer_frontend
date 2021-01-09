@@ -86,9 +86,9 @@ function renderDragon(props, option, snapshot, className) {
 function OptionSelect(props) {
     const [loading, setLoading] = useState(false)
     const [dragon, setDragon] = useState("")
+    const [mode, setMode] = useState("effmod")
     const [advanced, setAdvanced] = useState(false)
     const [necessary, setNecessary] = useState({
-        "mode": "effmod",
         "transform time": 600,
         "skill": 1,
         "leniency": 0,
@@ -172,6 +172,7 @@ function OptionSelect(props) {
         
         const submission = Object.assign({}, necessary)
         submission["dragon"] = dragon
+        submission["mode"] = mode
         submission["stats"] = Object.assign({}, stats)
         
         // hey you found the endpoint.
@@ -211,8 +212,8 @@ function OptionSelect(props) {
                                 <select
                                     id={"mode".concat(props.id)}
                                     name="mode"
-                                    value = {necessary["mode"]}
-                                    onChange={handleNecessary}
+                                    value = {mode}
+                                    onChange={e => setMode(e.target.value)}
                                     disabled={forbidden.includes(dragon)}
                                 >
                                     <option value={"puremod"}>Pure Modifier</option>
@@ -777,8 +778,8 @@ function OptionSelect(props) {
                     <BufferZone />
                 </> : apiResponse ?
                     <>
-                        <GenericTable headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/> 
-                        <GenericTable headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
+                        <GenericTable mode={mode.slice(0)} headerL={'Action'} headerR={'#'} body={apiResponse.decisionVariables}/> 
+                        <GenericTable mode={mode.slice(0)} headerL={'Results'} headerR={''} body={apiResponse.dataTable}/>
                         <ParseString body={apiResponse.decisionVariables} rules={apiResponse.rules} />
                     </> :
                     null

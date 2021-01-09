@@ -25,13 +25,10 @@ function FAQ() {
           </p>
           <h4 className="subheader">Results</h4>
           <p>
-            These are the results from the solve.
+            This displays some important statistics from the solve.
           </p>
           <p>
-            Max Damage and DPS can be either a percent modifier,
-            or a straight damage value depending on what options
-            you ran with (remember to multiply by 100 if it's a 
-            modifier).
+            Max Damage and DPS should be pretty self explanatory.
           </p>
           <p>
             Real Time is the amount of actual time (in frames)
@@ -45,15 +42,15 @@ function FAQ() {
           </p>
           <h4 className="subheader">Suggested String</h4>
           <p>
-            This generates one possible ordering of actions, stripping
-            states away for ease of viewing.
+            This will attempt to display one possible ordering of 
+            the optimal set.
 
             Actions are listed in combo notation - "C" followed
-            by the number of taps needed for execution.
+            by the number of taps needed for execution. (C1, C2, C3, etc.)
 
             If an action has multiple <i>distinct</i> hits, the
             number will additionally be followed by a lowercase
-            letter denoting which hits are referenced. For example:
+            letter denoting which hits are referenced. (C1a, C1b, etc.)
           </p>
           <p>
             There are also some oddballs:
@@ -178,8 +175,8 @@ function FAQ() {
             Don't ask questions you don't want to know the answers to.
             <br /><br /><br />
             It's really just light future proofing; I would
-            prefer to not be caught off-guard by something that
-            easy to implement.
+            prefer to not be caught off-guard by something so
+            easily implemented.
           </p>
         </div>
       </section>
@@ -191,7 +188,7 @@ function FAQ() {
 
             The time you enter is the time that's used.
 
-            Nimis is an exception; his skill costs negative frames.
+            Nimis is an exception, his skill costs negative frames.
           </p>
         </div>
       </section>

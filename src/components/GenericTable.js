@@ -10,10 +10,14 @@ function GenericTable(props) {
           return (
             <tr key={action.id}>
               <td className="leftrow">{action.id} </td>
-              {
+              { // ugly but functional
               (typeof action.value) === "number" ?
-                <td className="rightrow">{action.value.toPrecision(4) / 1}</td> :
-                <td className="rightrow">{action.value}</td>
+                (props.headerL === 'Results' 
+                && ['Max Damage', 'DPS'].some(s => action.id.includes(s))
+                && ['effmod', 'puremod'].some(s => props.mode.includes(s))) ?
+                  <td className="rightrow">{`${(action.value * 100).toPrecision(4) / 1}%`}</td> :
+                  <td className="rightrow">{action.value.toPrecision(4) / 1}</td> :
+                  <td className="rightrow">{action.value}</td>
               }
             </tr>
           )

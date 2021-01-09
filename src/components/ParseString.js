@@ -31,14 +31,7 @@ function ParseString(props) {
 
     return function cleanup() {
       console.log('sending shutdown signal')
-      worker.terminate() 
-      // this might cause memory leaks, idk
-      // seems more "proper" to use self.close()
-      // but CRA doesn't like that for some reason
-      // edit: this WILL cause memory leaks, if the user
-      // somehow manages to make submissions faster than
-      // the worker can solve - typically that shouldn't
-      // occur
+      worker.postMessage({message:"shutdown"})
     }
   }, [props.body, props.rules])
 

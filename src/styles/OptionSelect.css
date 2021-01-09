@@ -21,6 +21,7 @@ ul {
 
 .form-element {
     display: inline-flex;
+    max-height: 21px;
     flex-direction: row;
 }
 
@@ -105,6 +106,7 @@ ul {
 
 .disp_advanced {
     position: absolute; 
+    left: -999px;
     overflow: hidden; 
     clip-path: rect(0 0 0 0); 
     height: 1px; width: 1px; 
@@ -185,6 +187,10 @@ ul {
 input[type=number] {
     width: 60px;
 }
+
+/* input[type=number], input[type=select], input[type=button] {
+    height: 15px;
+} */
 
 .dragonphoto {
     position: absolute;

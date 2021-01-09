@@ -275,7 +275,7 @@ function OptionSelect(props) {
                                         </div>
                                         <div className="form-element">
                                             <label htmlFor={"baseDEF".concat(props.id)}>
-                                                Enemy Defense
+                                                Enemy Base Defense
                                             </label>
                                             <input 
                                                 name="basedef"

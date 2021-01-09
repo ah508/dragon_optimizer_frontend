@@ -92,6 +92,9 @@ const on_message = function(e) {
         const returnval = solution ? formatReduction(reduceMoves(solution)) : solution // simplifies solution if it is not null
         postMessage({message: 'result', value: returnval})
     }
+    if (e.data.message === 'shutdown') {
+        self.close() //eslint-disable-line no-restricted-globals
+    }
 }
 
 self.addEventListener("message", on_message) // eslint-disable-line no-restricted-globals

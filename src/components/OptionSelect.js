@@ -255,7 +255,7 @@ function OptionSelect(props) {
                                 />
                             </div>
                             {(() => {
-                                switch(necessary["mode"]) {
+                                switch(mode) {
                                     case "damage": return (
                                         <>
                                         <div className="form-element">

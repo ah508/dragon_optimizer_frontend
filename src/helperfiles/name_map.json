@@ -1192,5 +1192,16 @@
             "Permanent",
             "Gacha"
         ]
+    },
+    "210138_01": {
+        "NameEN": "Arsène",
+        "NameJP": "アルセーヌ",
+        "NameCN": "亚森 / 亞森",
+        "Element": 5,
+        "Rarity": 5,
+        "Availability": [
+            "Collab",
+            "Gacha"
+        ]
     }
 }

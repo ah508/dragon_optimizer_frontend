@@ -169,6 +169,15 @@ function FAQ() {
         </div>
       </section>
       <section className="sectionbody">
+        <h3 className="sectionheader">Horus seems.... wrong?</h3>
+        <div className="textbody">
+          <p>
+            Remember that this tool doesn't automatically factor in aura.
+            You'll need to input that 20% attack speed manually.
+          </p>
+        </div>
+      </section>
+      <section className="sectionbody">
         <h3 className="sectionheader">Why are there fields for force strikes?</h3>
         <div className="textbody">
           <p>

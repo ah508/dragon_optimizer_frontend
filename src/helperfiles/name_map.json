@@ -840,6 +840,17 @@
             "Gacha"
         ]
     },
+    "210137_01": {
+        "NameEN": "Menoetius",
+        "NameJP": "メノイティオス",
+        "NameCN": "墨诺提俄斯",
+        "Element": 3,
+        "Rarity": 5,
+        "Availability": [
+            "Permanent",
+            "Gacha"
+        ]
+    },
     "210020_01": {
         "NameEN": "Jeanne d'Arc",
         "NameJP": "\u30b8\u30e3\u30f3\u30cc\u30c0\u30eb\u30af",

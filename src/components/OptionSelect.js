@@ -162,7 +162,7 @@ function OptionSelect(props) {
         "Mini Hildy", 
         "Mini Zodi", 
         "Barbatos", 
-        "Horus",
+        "Menoetius",
     ]
 
     const handleSubmit = (evt) => {

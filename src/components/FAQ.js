@@ -128,13 +128,7 @@ function FAQ() {
               Some dragons do not yet have empirically verified
               framedata.
               
-              At the time of writing, this includes:
-              <ul>
-                <li>Mini Hildy</li>
-                <li>Mini Zodi</li>
-                <li>Barbatos</li>
-                <li>Horus</li>
-              </ul>
+              At the time of writing, this should only include Menoetius.
             </li>
             <li>
               Some dragons might not be implemented yet.

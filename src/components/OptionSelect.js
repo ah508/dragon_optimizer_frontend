@@ -158,10 +158,7 @@ function OptionSelect(props) {
         false, 
         "Gala Thor", 
         "Giovanni", 
-        "Shishimai", 
-        "Mini Hildy", 
-        "Mini Zodi", 
-        "Barbatos", 
+        "Shishimai",
         "Menoetius",
     ]
 

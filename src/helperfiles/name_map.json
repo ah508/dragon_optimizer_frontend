@@ -992,6 +992,17 @@
             "Gacha"
         ]
     },
+    "210144_01":{
+        "NameEN": "Gala Reborn Jeanne",
+        "NameJP": "ジャンヌブレイヴ",
+        "NameCN": "无畏贞德",
+        "Element": 4,
+        "Rarity": 5,
+        "Availability": [
+            "Gala",
+            "Gacha"
+        ]
+    },
     "210019_01": {
         "NameEN": "Nidhogg",
         "NameJP": "\u30cb\u30fc\u30ba\u30d8\u30c3\u30b0",
